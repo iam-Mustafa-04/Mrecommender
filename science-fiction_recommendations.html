@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category: Sci-Fi</title> 
+  <style>
+    /* CSS Styles */
+    body {
+      background: linear-gradient(135deg, #9a95ad, #0602cc); /* Reddish dark grey gradient */
+      color: #ffffff;
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .category-heading {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            background-color: rgba(17, 0, 116, 0.932); /* Semi-transparent white */
+            border-radius: 50px;
+            padding: 10px 10px; /* Add padding */
+            border: 2px solid #ffffff; /* Add border */
+        }
+
+    .movie-box {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(248, 241, 241, 0.3); /* White shadow */
+      transition: box-shadow 0.2s ease-in-out; /* Smooth transition */
+      border: 0.15px solid#ffffff;    }
+
+    .movie-box:hover {
+      box-shadow: 0 0 20px rgb(15, 15, 15); /* White shadow on hover */
+    }
+
+    .movie-image {
+      width: 150px;
+      height: auto;
+      margin-right: 20px;
+      border-radius: 5%;
+      border: 2px solid#ffffff;
+    }
+
+    .movie-details {
+      flex: 1;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .movie-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+
+    .movie-description {
+      font-size: 16px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .back-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+ /* Style the "Something New" button */
+ .back-button button {
+    padding: 20%;
+      background-color: #f7f4f4; /* Green */
+      border: none;
+      color: rgb(8, 8, 8);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    /* Change the button color on hover */
+    .back-button button:hover {
+        box-shadow: 0 0 20px rgb(12, 12, 12); /* White shadow on hover */
+    }
+
+    .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #050404ea;
+  transition: opacity 15s, visibility 3s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #e6d9d9;
+  border-top-color: #0703f5;
+  border-radius: 50%;
+  animation: loading 0.5s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="loader"></div>
+  <!-- Category heading -->
+  <div class="category-heading">Category: Science-fiction</div>
+
+  <!-- Movie box -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sc/sc1.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Iron Man</div>
+            <div class="movie-description">Lots of superhero movies are, at their core, also science fiction movies, but the first Marvel Cinematic Universe film - which takes place at a time when the MCU’s fictional reality seemed relatively real, and the introduction of superheroes was a major revelation - is probably the most straightforward example. Iron Man isn’t just a movie about a guy in a cool costume fighting supervillains. It’s rooted in the fundamental irony of Stan Lee, Larry Lieber, Don Heck and Jack Kirby’s original character, an arms manufacturer who is forced to turn himself into a weapon and experience firsthand the moral complexities of warfare, and come to terms with his own culpability in making the world a dangerous place.<br><br>
+             <b> DIRECTOR</b>:    Jon Favreau<br>
+             <b>WRITER</b>:        Mark Fergus, Hawk Ostby,    Art Marcum <br>  
+             <b>STARS</b>:  Robert Downey Jr. , Gwyneth Paltrow , Terrence Howard <br>
+             <b>YEAR</b>:  2008<br>
+             <a href="https://www.imdb.com/title/tt0371746/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_iron%2520man"><b>MORE DETAILS</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sc/sc2.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Avatar </div>
+            <div class="movie-description">There are parts of James Cameron’s ultra-mega-super-blockbuster sci-fi spectacular Avatar that, frankly, seem rudimentary. It’s a tried-and-true story about a generic colonial hero who immerses himself into another culture, becomes their greatest hero, and fights superficial bad guys who only need to make a ruckus in the first place because they’re looking for an absurdly named MacGuffin called “Unobtainium,” for crying out loud.<br><br>
+              <b> DIRECTOR</b>     James Cameron<br>
+              <b>WRITER</b>:        James Cameron <br>  
+              <b>STARS</b>:        Sam Worthington, Zoe Saldana ,Sigourney Weaver<br>
+              <b>YEAR</b>:  2009<br>
+              <a href="https://www.imdb.com/title/tt0499549/?ref_=nv_sr_srsg_6_tt_8_nm_0_q_Avatar"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sc/sc3.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Gamer </div>
+            <div class="movie-description">The horrifying dystopian vision of humans hunting humans for sport takes on a new dimension in Neveldine/Taylor’s energized and embittered sci-fi thriller Gamer. The film stars Gerard Butler as a convicted felon on death row who has a slim chance to earn his freedom by taking part in modern gladiatorial combat for the entertainment of the masses. The twist is, he’s not in control of his own body: he’s being controlled by a teenaged video game enthusiast, who gleefully uses our hero to slaughter other criminals for fun and profit.
+              <br><br>
+              <b> DIRECTOR</b>Mark Neveldine, Brian Taylor<br>
+              <b>WRITER</b>: Mark NeveldineB, rian Taylor <br>  
+              <b>STARS</b>:     Gerard Butler,Michael C. Hall, Ludacris<br>
+              <b>YEAR</b>:  2009<br>
+              <a href="https://www.imdb.com/title/tt1034032/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Gamer"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sc/sc4.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Splice </div>
+            <div class="movie-description">It’s nothing short of astounding how many different, horrifying ways scientists have found to play god. In fiction, at least, they’ve been revisiting the shocking biological experiments of Mary Shelley’s Frankenstein for over two centuries, frequently concocting new and unthinkable creatures and rarely, if ever, considering the awesome responsibility of their actions. Vincenzo Natali’s impeccably crafted and obscenely icky Splice may very well be the creepiest modern rendition of the timeless classic.<br><br>
+              <b> DIRECTOR</b>:     Vincenzo Natali<br>
+              <b>WRITER</b>:      Vincenzo Natali <br>  
+              <b>STARS</b>:        Adrien Brody,Sarah Polley,Delphine Chanéac <br>
+              <b>YEAR</b>:  2009<br>
+              <a href="https://www.imdb.com/title/tt1017460/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_Splice"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sc/sc5.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Inception </div>
+            <div class="movie-description">Christopher Nolan's riff on Satoshi Kon's Paprika borrows ideas and imagery but becomes its own, distinct entity, full of new ideas and stunning imagery. Inception stars Leonardo DiCaprio as a thief who steals ideas from within his victim’s dreams, who has been hired to do the exact opposite: introduce a brand new idea into the brain of a corporate tycoon. That’s harder than it sounds, and so he assembles a team of crackerjack geniuses to build mazes within mazes inside their mark’s mind, and dig ever deeper into his subconscious to plant the seeds that must be planted.<br><br>
+              <b> DIRECTOR</b>:    Christopher Nolan<br>
+              <b>WRITER</b>:  Christopher Nolan<br>  
+              <b>STARS</b>:      Leonardo DiCaprio,Joseph Gordon-Levitt,Elliot Page <br>
+              <b>YEAR</b>:  2010<br>
+              <a href="https://www.imdb.com/title/tt1375666/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Inception"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sc/sc6.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">TRON: Legacy</div>
+            <div class="movie-description">Audiences werent ready for TRON when the original film came out in 1982. The ultra-stylized, neon-highlighted sci-fi/fantasy starred Jeff Bridges as a programmer who got sucked into the inner world of a computer’s operating system, where anthropomorphic programs worship their unseen users like gods. As a film, the original was full of heady ideas and amazing imagery. It was also admittedly rather stodgy, but that’s not something you say about TRON: Legacy.<br><br>
+              <b> DIRECTOR</b>:         Joseph Kosinski<br>
+              <b>WRITER</b>:      Edward Kitsis,Adam Horowitz,Brian Klugman <br>  
+              <b>STARS</b>:        Jeff Bridges,Garrett Hedlund,Olivia Wilde<br>
+              <b>YEAR</b>:  2010<br>
+              <a href="https://www.imdb.com/title/tt1104001/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_TRON%253A%2520Legacy"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sc/sc7.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Gravity </div>
+            <div class="movie-description">Very few characters have ever been as deeply screwed over as Sandra Bullock’s Dr. Ryan Stone in Gravity. As she’s trying to fix an orbiting space station, a rapidly accelerating debris field destroys the station and her shuttle and sends her fellow astronauts hurtling into space. Now she’s trapped in outer space, floating in the void, with only two options: die, or try to save herself and probably die anyway, because the odds are impossibly against her.<br><br>
+              <b> DIRECTOR</b>:        Alfonso Cuarón<br>
+              <b>WRITER</b>:       Alfonso CuarónJonás Cuarón <br>  
+              <b>STARS</b>: Sandra Bullock,George Clooney,Ed Harris<br>
+              <b>YEAR</b>:  2013<br>
+              <a href="https://www.imdb.com/title/tt1454468/?ref_=nv_sr_srsg_1_tt_7_nm_0_q_Gravity"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sc/sc8.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">The Worlds End</div>
+            <div class="movie-description">The third film in Edgar Wright’s celebrated “Cornetto Trilogy” is, perhaps, the least appreciated. That may be because unlike Shaun of the Dead and Hot Fuzz - films about likable young men growing up in and through the playful application of familiar movie tropes - The World’s End is about bitter, regretful, unhappy men getting drunk and fighting robots<br><br>
+              <b> DIRECTOR</b>:     Edgar Wright<br>
+              <b>WRITER</b>:Simon Pegg, Edgar Wright <br>  
+              <b>STARS</b>:    Simon Pegg,Nick Frost,Martin Freeman <br>
+              <b>YEAR</b>:  2013<br>
+              <a href="https://www.imdb.com/title/tt1213663/?ref_=nv_sr_srsg_6_tt_8_nm_0_q_the%2520worlds%2520end"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sc/sc9.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Edge of Tomorrow</div>
+            <div class="movie-description">Most action movies do every single thing in their power not to kill their protagonist, but that’s not the case in Doug Liman’s insidiously clever Edge of Tomorrow. The film stars Tom Cruise as a military publicist sent to the front lines and forced to fight for his life against an alien armada, and he dies almost immediately. The gag is he then goes back to the start of his day, reliving all the same events all over again, and dies almost immediately. In fact, Tom Cruise dies so much in Edge of Tomorrow that the film probably has one of the largest body counts in years… and the victim is always Tom Cruise.<br><br>
+              <b> DIRECTOR</b>:              Doug Liman<br>
+              <b>WRITER</b>:             Christopher McQuarrie,Jez Butterworth,John-Henry Butterworth<br>  
+              <b>STARS</b>:        Tom Cruise,Emily Blunt,Bill Paxton <br>
+              <b>YEAR</b>:  2014<br>
+              <a href="https://www.imdb.com/title/tt1631867/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_Edge%2520of%2520Tomorrow"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sc/sc10.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Guardians of the Galaxy </div>
+            <div class="movie-description">It took a surprisingly long time for the Marvel Cinematic Universe - a franchise which argues that all magic is science, and that even the mythological gods of yore are simply space aliens with familiar names - to finally tell a story that takes place completely in outer space. But when they did, they did it right. James Gunn’s Guardians of the Galaxy combines the wry wit that came to define the MCU with old-fashioned space opera spectacles, in which a ragtag team of misfits have to set aside their differences to save the universe from a space MacGuffin that could kill us all. And they do it, at least in part, with a dance-off<br><br>
+              <b> DIRECTOR</b>:             James Gunno<br>
+              <b>WRITER</b>:  James Gunn,Nicole Perlman,Dan Abnett <br>  
+              <b>STARS</b>:           Chris Pratt,Vin Diesel,Bradley Cooper<br>
+              <b>YEAR</b>:  2014<br>
+              <a href="https://www.imdb.com/title/tt2015381/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Guardians%2520of%2520the%2520Galaxy"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sc/sc11.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Interstellar </div>
+            <div class="movie-description">Christopher Nolans ambitious sci-fi epic Interstellar may not have been the 2001: A Space Odyssey of its generation, but it may forever change the way we look at space travel in cinema. Matthew McConaughey stars as a former astronaut in a near future overtaken by famine, when life on Earth will soon be impossible, and only a last-ditch effort to find a new home amongst the stars can save the mankind. The crew’s mission is to search the few potentially inhabitable planets within reach in the hopes of finding a new home.<br><br>
+              <b> DIRECTOR</b>:          Christopher Nolan<br>
+              <b>WRITER</b>:      Jonathan NolanChristopher Nolan <br>  
+              <b>STARS</b>:  Matthew McConaughey,Anne Hathaway,Jessica Chastain <br>
+              <b>YEAR</b>:  2014<br>
+              <a href="https://www.imdb.com/title/tt0816692/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Interstellar"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sc/sc12.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">The Martian </div>
+            <div class="movie-description">A manned expedition to Mars goes awry and an astronaut played by Matt Damon accidentally gets marooned all by himself, with seemingly no hope of rescue. Few characters in movie history could be deemed more hopeless than botanist Mark Watney, but he refuses to give in to despair, and sets about instead on solving the most impossible scientific problems in human history. He will survive all by himself on the planet Mars, even if it kills him.<br><br>
+              <b> DIRECTOR</b>:   Ridley Scott<br>
+              <b>WRITER</b>:              Drew Goddard , Andy Weir<br>  
+              <b>STARS</b>: Matt Damon,Jessica Chastain,Kristen Wiig <br>
+              <b>YEAR</b>:  2015<br>
+              <a href="https://www.imdb.com/title/tt0068767/?ref_=nv_sr_srsg_4_tt_5_nm_3_q_fist%2520"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="back-button" href="slice-of-life_recommendations.html"><button>somethng new</button></a>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // JavaScript code goes here
+    window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category: Western</title> 
+  <style>
+    /* CSS Styles */
+    body {
+      background: linear-gradient(135deg, #3ae90e, #fc0707); /* Reddish dark grey gradient */
+      color: #ffffff;
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .category-heading {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            background-color: rgba(44, 133, 2, 0.589); /* Semi-transparent white */
+            border-radius: 50px;
+            padding: 10px 10px; /* Add padding */
+            border: 2px solid #ffffff; /* Add border */
+        }
+
+    .movie-box {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(248, 241, 241, 0.3); /* White shadow */
+      transition: box-shadow 0.2s ease-in-out; /* Smooth transition */
+      border: 0.15px solid#ffffff;    }
+
+    .movie-box:hover {
+      box-shadow: 0 0 20px rgb(15, 10, 10); /* White shadow on hover */
+    }
+
+    .movie-image {
+      width: 150px;
+      height: auto;
+      margin-right: 20px;
+      border-radius: 5%;
+      border: 2px solid#ffffff;
+    }
+
+    .movie-details {
+      flex: 1;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .movie-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+
+    .movie-description {
+      font-size: 16px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .back-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+ /* Style the "Something New" button */
+ .back-button button {
+    padding: 20%;
+      background-color: #33e40f; /* Green */
+      border: none;
+      color: rgb(19, 17, 17);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    /* Change the button color on hover */
+    .back-button button:hover {
+        box-shadow: 0 0 20px rgb(255, 255, 255); /* White shadow on hover */
+    }
+    .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0000ea;
+  transition: opacity 15s, visibility 3s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #ffffff;
+  border-top-color: #fd0505;
+  border-radius: 50%;
+  animation: loading 0.5s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div class="loader"></div>
+  <!-- Category heading -->
+  <div class="category-heading">Category: Western</div>
+
+   <!-- Movie box -->
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/we/we1.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">The Book of Eli</div>
+              <div class="movie-description">
+                  THE BOOK OF ELI stars Denzel Washington in a post-apocalyptic thriller set 30 years after a final war has turned much of Earth into an ashy wasteland. Washington plays Eli, a laconic man journeying westward across America to carry a sacred book to safety, hoping that it will restore mankind and bring a better future.<br><br>
+                  <b> DIRECTOR</b>:    Albert Hughes ,Allen Hughes<br>
+                  <b>WRITER</b>:  Gary Whitta<br>
+                  <b>STARS</b>:  Denzel Washington	,Gary Oldman ,Mila Kunis	 <br>
+                  <b>YEAR</b>:  2010<br>
+                  <a href="https://www.imdb.com/title/tt1037705/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/we/we2.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">Redeeming Love</div>
+              <div class="movie-description">
+                  Based on the bestselling novel by Francine Rivers, REDEEMING LOVE is a powerful story of relentless love and perseverance as a young couple's relationship clashes with the harsh realities of the California Gold Rush of 1850. It is a life-changing story of the power of unconditional and all-consuming love.<br><br>
+                  <b> DIRECTOR</b>: D.J. Caruso<br>
+                  <b>WRITER</b>:  Francine Rivers , D.J. Caruso <br>
+                  <b>STARS</b>:  Abigail Cowen	, Tom Lewis	, Eric Dane	,Famke Janssen	 <br>
+                  <b>YEAR</b>:  2022<br>
+                  <a href="https://www.imdb.com/title/tt11365186/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/we/we3.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">The Longest Ride</div>
+              <div class="movie-description">
+                  Based on the bestselling novel by master storyteller Nicholas Sparks, THE LONGEST RIDE centers on the star-crossed love affair between Luke, a former champion bull rider looking to make a comeback, and Sophia, a college student who is about to embark upon her dream job in New York City's art world.<br><br>
+                  <b> DIRECTOR</b>:  George Tillman Jr.<br>
+                  <b>WRITER</b>: Nicholas Sparks,Craig Bolotin<br>
+                  <b>STARS</b>:  Britt Robertson, Scott Eastwood, Alan Alda, Jack Huston<br>
+                  <b>YEAR</b>:  2015<br>
+                  <a href="https://www.imdb.com/title/tt2726560/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/we/we4.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">The Revenant</div>
+              <div class="movie-description">
+                  Set in 1820s America, fur trapper and Frontiersman Hugh Glass struggles to survive the harsh winter after an oppressive Ree Indian attack and a mauling from a hostile maternal bear. Abandoned by his crew, Glass attempts to cross the bleak wasteland with only a single notion set in his mind; Revenge.<br><br>
+                  <b> DIRECTOR</b>:    Alejandro G. Iñárritu<br>
+                  <b>WRITER</b>:  Mark L. Smith ,Alejandro G. Iñárritu,Michael Punke <br>
+                  <b>STARS</b>:  Leonardo DiCapri ,Tom Hardy, Domhnall Gleeson,  Will Poulter <br>
+                  <b>YEAR</b>:  2015<br>
+                  <a href="https://www.imdb.com/title/tt1663202/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/we/we5.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">The Dark Tower</div>
+              <div class="movie-description">
+                  Located in the fey region of End-World, amid a sea of singing red roses, the Dark Tower is the nexus point of the time-space continuum. It is the heart of all worlds, but it is also under threat. Someone, or something, is using the evil technology of the Great Old Ones to destroy it.<br><br>
+                  <b> DIRECTOR</b>:    Nikolaj Arcel<br>
+                  <b>WRITER</b>:  Akiva Goldsman	<br>
+                  <b>STARS</b>:  Matthew McConaughey , Idris Elba ,Tom Taylor	<br>
+                  <b>YEAR</b>:  2017<br>
+                  <a href="https://www.imdb.com/title/tt1648190/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/we/we6.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">American Sniper</div>
+              <div class="movie-description">
+                  U.S. Navy SEAL Chris Kyle (Bradley Cooper) takes his sole mission -- protect his comrades -- to heart and becomes one of the most lethal snipers in American history. His pinpoint accuracy not only saves countless lives but also makes him a prime target of insurgents.<br><br>
+                  <b> DIRECTOR</b>:  Clint Eastwood <br>
+                  <b>WRITER</b>:  Jason Hall ,Chris Kyle ,Scott McEwen	 <br>
+                  <b>STARS</b>:  Bradley Cooper,Kyle Gallner,Cole Konis, Elise Robertson <br>
+                  <b>YEAR</b>:  2014<br>
+                  <a href="https://www.imdb.com/title/tt2179136/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/we/we7.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">Serenity</div>
+              <div class="movie-description">
+                  Baker Dill (Matthew McConaughey) is a fishing boat captain leading tours off a tranquil, tropical enclave called Plymouth Island. His quiet life is shattered, however, when his ex-wife Karen (Anne Hathaway) tracks him down with a desperate plea for help.<br><br>
+                  <b> DIRECTOR</b>:    Joss Whedon <br>
+                  <b>WRITER</b>:  Joss Whedon<br>
+                  <b>STARS</b>:  Nathan Fillion	,Gina Torres ,Alan Tudyk ,Morena Baccarin	<br>
+                  <b>YEAR</b>:  2005<br>
+                  <a href="https://www.imdb.com/title/tt0379786/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/we/we8.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">Killers of the Flower Moon</div>
+              <div class="movie-description">
+                  The movie is based on David Grann's 2017 book “Killers of the Flower Moon: The Osage Murders and the Birth of the F.B.I.,” a nonfiction account of how, in the early 20th century, greedy whites preyed on the newly oil-rich tribe.16 Feb 2024<br><br>
+                  <b> DIRECTOR</b>:    Martin Scorsese<br>
+                  <b>WRITER</b>:  Eric Roth,Martin Scorsese,David Grann<br>
+                  <b>STARS</b>:  Leonardo DiCaprio ,Robert De Niro ,Lily Gladstone ,Jesse Plemons <br>
+                  <b>YEAR</b>:  2023<br>
+                  <a href="https://www.imdb.com/title/tt5537002/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/we/we9.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">Blood and Gold</div>
+              <div class="movie-description">
+                  Synopsis. In the spring of 1945, the Allied armies invade Nazi Germany as the end of World War II draws near. Heinrich (Robert Maaser), a decorated Wehrmacht veteran, is captured and hanged by Waffen-SS led by a fanatical lieutenant colonel Von Starnfeld (Alexander Scheer), after a desertion attempt.<br><br>
+                  <b> DIRECTOR</b>:   Peter Thorwarth  <br>
+                  <b>WRITER</b>:  Stefan Barth Peter Thorwarth<br>
+                  <b>STARS</b>: Jördis Triebel ,Robert Maaser ,Alexander ,Marie Hackecheer<br>
+                  <b>YEAR</b>:  2023<br>
+                  <a href="https://www.imdb.com/title/tt18073328/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/we/we10.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">The Highwaymen</div>
+              <div class="movie-description">
+                  The Highwaymen is a 2019 American period crime thriller film directed by John Lee Hancock and written by John Fusco. The film stars Kevin Costner and Woody Harrelson as Frank Hamer and Maney Gault, two former Texas Rangers who attempt to track down and apprehend notorious criminals Bonnie and Clyde in the 1930s.<br><br>
+                  <b> DIRECTOR</b>:   John Lee Hancock<br>
+                  <b>WRITER</b>:  John Fusco  <br>
+                  <b>STARS</b>:  Kevin Costner ,Woody Harrelson ,Kathy Bates <br>
+                  <b>YEAR</b>:  2019<br>
+                  <a href="https://www.imdb.com/title/tt1860242/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/we/we11.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">John Carter </div>
+              <div class="movie-description">
+                  It chronicles the first interplanetary adventure of John Carter and his attempts to mediate civil unrest amongst the warring kingdoms of Barsoom. Several attempts to adapt the Barsoom series had been made since the 1930s by various major studios and producers.<br><br>
+                  <b> DIRECTOR</b>:   Andrew Stanton<br>
+                  <b>WRITER</b>: Andrew Stanton	,Mark Andrews, Michael Chabon <br>
+                  <b>STARS</b>:  Taylor Kitsch	, Lynn Collins	,Samantha Morton <br>
+                  <b>YEAR</b>:  2012 <br>
+                  <a href="https://www.imdb.com/title/tt0401729/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/we/we12.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">Cowboys and Aliens</div>
+              <div class="movie-description">Synopsis. In 1873, Arizona Territory, an unnamed loner (Daniel Craig) wakes up in the desert injured, with no memory and with a strange metal shackle on his wrist. After killing three drifters who try to rob him, he takes their clothes, weapons and a horse.<br><br>
+                  <b> DIRECTOR</b>:   Jon Favreau<br>
+                  <b>WRITER</b>:  Roberto Orci	 <br>
+                  <b>STARS</b>:  Daniel Craig ,Abigail Spencer ,Buck Taylor<br>
+                  <b>YEAR</b>:  2011<br>
+                  <a href="https://www.imdb.com/title/tt0409847/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="back-button" href="action_recommendations.html"><button>somethng new</button></a>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // JavaScript code goes here\
+    window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+  </script>
+
+</body>
+
+</html>

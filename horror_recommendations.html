@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category: Horror</title> 
+  <style>
+    /* CSS Styles */
+    body {
+      background: linear-gradient(135deg, #160404, #e2b9b9); /* Reddish dark grey gradient */
+      color: #ffffff;
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .category-heading {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            background-color: rgba(66, 39, 39, 0.589); /* Semi-transparent white */
+            border-radius: 50px;
+            padding: 10px 10px; /* Add padding */
+            border: 2px solid #ffffff; /* Add border */
+        }
+
+    .movie-box {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(248, 241, 241, 0.3); /* White shadow */
+      transition: box-shadow 0.2s ease-in-out; /* Smooth transition */
+      border: 0.15px solid#ffffff;    }
+
+    .movie-box:hover {
+      box-shadow: 0 0 20px rgb(255, 255, 255); /* White shadow on hover */
+    }
+
+    .movie-image {
+      width: 150px;
+      height: auto;
+      margin-right: 20px;
+      border-radius: 5%;
+      border: 2px solid#ffffff;
+    }
+
+    .movie-details {
+      flex: 1;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .movie-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+
+    .movie-description {
+      font-size: 16px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .back-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+ /* Style the "Something New" button */
+ .back-button button {
+    padding: 20%;
+      background-color: #181616; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    /* Change the button color on hover */
+    .back-button button:hover {
+        box-shadow: 0 0 20px rgb(255, 255, 255); /* White shadow on hover */
+    }
+
+    .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3ededea;
+  transition: opacity 15s, visibility 3s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #0c0a0a;
+  border-top-color: #ebf3f2;
+  border-radius: 50%;
+  animation: loading 0.5s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="loader"></div>
+  <!-- Category heading -->
+  <div class="category-heading">Category: Horror</div>
+
+  <!-- Movie box -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/h/h1.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Haunted</div>
+            <div class="movie-description">Set in the beautiful winter landscape of Norway, Haunted follows Catherine as she travels back to her old family estate after her father's death. When locals start telling stories of disappearances and possible murders, she is forced to confront her family's mysterious past.<br><br>
+             <b> DIRECTOR</b>:    Eros D'Antona<br>
+             <b>WRITER</b>: Eros D'AntonaRoberto ,D'Antona <br>  
+             <b>STARS</b>: Roberto D'AntonaMichael SegálDavid White <br>
+             <b>YEAR</b>:  2017<br>
+             <a href="https://www.imdb.com/title/tt3530328/"><b>MORE DETAILS</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/h/h2.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">1920</div>
+            <div class="movie-description">1920 is a 2008 Indian Hindi-language supernatural horror film written and directed by Vikram Bhatt. The plot revolves around the events surrounding a married couple living in a haunted house in the year 1920.<br><br>
+              <b> DIRECTOR</b>:    Uday InamatiVikram Bhatt<br>
+              <b>WRITER</b>: Vikram Bhatt,Dheeraj Rattan,Girish Dhamija <br>  
+              <b>STARS</b>:  Rakhi Sawant,Bob Brahmbhatt,Rajneesh Duggal <br>
+              <b>YEAR</b>:  2017<br>
+              <a href="https://www.imdb.com/title/tt1301698/"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/h/h3.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">1920 : london</div>
+            <div class="movie-description">The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.
+              <br><br>
+              <b> DIRECTOR</b>:  Anthony Russo,Joe Russo<br>
+              <b>WRITER</b>: Christopher Markus,Stephen McFeely,Stan Lee <br>  
+              <b>STARS</b>:  rs Robert Downey Jr, Chris Hemsworth ,Mark Ruffalo<br>
+              <b>YEAR</b>:  2018<br>
+              <a href="https://www.imdb.com/title/tt4154756/fullcredits?ref_=tt_ov_st_sm"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/h/h4.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">1920: Evil Returns</div>
+            <div class="movie-description">A famous poet, Jaidev, meets a woman who has lost her memories. He brings her to his house and tries to help her, but things take an ugly turn when she gets possessed by an evil spirit.<br><br>
+              <b> DIRECTOR</b>:  Bhushan Patel<br>
+              <b>WRITER</b>: Vikram Bhatt,Sanjay Masoomm <br>  
+              <b>STARS</b>: Aftab Shivdasani,Tia Bajpai,Sharad Kelkar <br>
+              <b>YEAR</b>:  2012<br>
+              <a href="https://www.imdb.com/title/tt2222550/"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/h/h5.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">The Exorcist</div>
+            <div class="movie-description">The book, inspired by the 1949 exorcism of Roland Doe, deals with the demonic possession of a 12-year-old girl and her mother's attempts to win back her child through an exorcism conducted by two priests.<br><br>
+              <b> DIRECTOR</b>:   William Friedkin<br>
+              <b>WRITER</b>: William Peter Blatty <br>  
+              <b>STARS</b>:  Ellen Burstyn,Max von Sydow,Linda Blair<br>
+              <b>YEAR</b>:  2016<br>
+              <a href="https://www.imdb.com/title/tt0070047/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_the%2520exor"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/h/h6.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">The Conjuring 2</div>
+            <div class="movie-description">Plot. In 1976, paranormal investigators Ed and Lorraine Warren investigate the Amityville murders at the Amityville house, to determine if a demonic presence was truly responsible for Ronald DeFeo Jr. killing his entire family on November 13, 1974, and the subsequent haunting incident involving the Lutz family.<br><br>
+              <b> DIRECTOR</b>:  James Wan<br>
+              <b>WRITER</b>:  Chad Hayes,Carey W. Hayes,James Wani <br>  
+              <b>STARS</b>: Vera Farmiga,Patrick Wilson,Madison Wolfe <br>
+              <b>YEAR</b>:  2016<br>
+              <a href="https://www.imdb.com/title/tt3065204/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_the%2520conjuring%25202"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/h/h7.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Thanksgiving</div>
+            <div class="movie-description">After a Black Friday riot ends in tragedy, a mysterious Thanksgiving-inspired killer terrorizes Plymouth, Massachusetts - the birthplace of the infamous holiday.<br><br>
+              <b> DIRECTOR</b>:     Eli Roth<br>
+              <b>WRITER</b>:  Jeff RendellEli Roth<br>  
+              <b>STARS</b>: Patrick Dempsey,Ty Olsson,Gina Gershon <br>
+              <b>YEAR</b>:  2023<br>
+              <a href="https://www.imdb.com/title/tt1448754/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_thanks"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/h/h8.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Annabelle</div>
+            <div class="movie-description">
+              Annabelle is an allegedly-haunted Raggedy Ann doll, housed in the now closed occult museum of the paranormal investigators Ed and Lorraine Warren. Annabelle was moved there after supposed hauntings in 1970. A character based on the doll is one of the antagonists that appear in The Conjuring Universe.<br><br>
+              <b> DIRECTOR</b>: John R. Leonetti<br>
+              <b>WRITER</b>: Gary Dauberman <br>  
+              <b>STARS</b>: Ward Horton,Annabelle Wallis,Alfre Woodard<br>
+              <b>YEAR</b>:  2014<br>
+              <a href="https://www.imdb.com/title/tt3322940/?ref_=nv_sr_srsg_6_tt_2_nm_6_q_annabele"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/h/h9.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Death Ship</div>
+            <div class="movie-description">A mysterious ghostly freighter rams and sinks a modern day cruise ship whose survivors climb aboard the freighter and discover that it is a World War II Nazi torture vessel.<br><br>
+              <b> DIRECTOR</b>:   Alvin Rakoff<br>
+              <b>WRITER</b>:  John Robins,jack Hill,David P. Lewis <br>  
+              <b>STARS</b>:   George Kennedy,Richard Crenna,Nick Mancuso <br>
+              <b>YEAR</b>:  1980<br>
+              <a href="https://www.imdb.com/title/tt0080603/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_death%2520ship"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/h/h10.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">The Nun</div>
+            <div class="movie-description">Plot. In 1952 Romania, two nuns living at the Saint Cartha's monastery are attacked by an unseen evil force. The surviving nun, Sister Victoria, flees from the attacker, a demon appearing as a nun, and hangs herself. Her body is discovered by Frenchie, a villager who transports supplies to the nuns.<br><br>
+              <b> DIRECTOR</b>:  Corin Hardy<br>
+              <b>WRITER</b>:Gary Dauberman,James Wan <br>  
+              <b>STARS</b>:  Demián Bichir,Taissa Farmiga,Jonas Bloquet<br>
+              <b>YEAR</b>:  2018<br>
+              <a href="https://www.imdb.com/title/tt5814060/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_the%2520nun"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/h/h11.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Dead Silence</div>
+            <div class="movie-description"> Jamie Ashen and his wife, Lisa, receive a rather odd package in the mail: a ventriloquist doll. Shortly after its arrival, Lisa is found dead. A solemn Jamie must travel back to his hometown of Raven's Fair to find answers and to stop the evil presence that pursues him.<br><br>
+              <b> DIRECTOR</b>:  James Wan<br>
+              <b>WRITER</b>:Leigh Whannell,James Wan<br>  
+              <b>STARS</b>:  Ryan Kwanten,Amber Valletta,Donnie Wahlberg <br>
+              <b>YEAR</b>:  2007<br>
+              <a href="https://www.imdb.com/title/tt0455760/?ref_=fn_al_tt_1"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/h/h12.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">IT</div>
+            <div class="movie-description">Set in Derry, Maine, the film tells the story of The Losers' Club (Lieberher, Ray Taylor, Lillis, Wolfhard, Oleff, Jacobs, and Dylan Grazer), a group of seven outcast children who are terrorized by the eponymous being which emerges from the sewer (Skarsgård), only to face their own personal demons in the process<br><br>
+              <b> DIRECTOR</b>:    Andy Muschietti<br>
+              <b>WRITER</b>:  Chase Palmer,Cary Joji, FukunagaGary Dauberman<br>  
+              <b>STARS</b>: Bill Skarsgård,Jaeden Martell,Finn Wolfhard <br>
+              <b>YEAR</b>:  2017<br>
+              <a href="https://www.imdb.com/title/tt1396484/?ref_=nv_sr_srsg_0_tt_6_nm_2_q_it"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="back-button" href="romance_recommendations.html"><button>somethng new</button></a>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // JavaScript code goes here
+    window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+  </script>
+
+</body>
+
+</html>

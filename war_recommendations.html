@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category: War</title> 
+  <style>
+    /* CSS Styles */
+    body {
+      background: linear-gradient(135deg, #e0e419, #373803); /* Reddish dark grey gradient */
+      color: #ffffff;
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .category-heading {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            background-color: rgba(152, 155, 1, 0.822); /* Semi-transparent white */
+            border-radius: 50px;
+            padding: 10px 10px; /* Add padding */
+            border: 2px solid #ffffff; /* Add border */
+        }
+
+    .movie-box {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(248, 241, 241, 0.3); /* White shadow */
+      transition: box-shadow 0.2s ease-in-out; /* Smooth transition */
+      border: 0.15px solid#ffffff;    }
+
+    .movie-box:hover {
+      box-shadow: 0 0 20px rgb(14, 13, 13); /* White shadow on hover */
+    }
+
+    .movie-image {
+      width: 150px;
+      height: auto;
+      margin-right: 20px;
+      border-radius: 5%;
+      border: 2px solid#ffffff;
+    }
+
+    .movie-details {
+      flex: 1;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .movie-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+
+    .movie-description {
+      font-size: 16px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .back-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+ /* Style the "Something New" button */
+ .back-button button {
+    padding: 20%;
+      background-color: #f7e709; /* Green */
+      border: none;
+      color: rgb(12, 8, 8);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    /* Change the button color on hover */
+    .back-button button:hover {
+        box-shadow: 0 0 20px rgb(255, 255, 255); /* White shadow on hover */
+    }
+    .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3ededea;
+  transition: opacity 15s, visibility 3s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #0c0a0a;
+  border-top-color: #c6e70a;
+  border-radius: 50%;
+  animation: loading 0.5s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="loader"></div>
+  <!-- Category heading -->
+  <div class="category-heading">Category: War</div>
+
+   <!-- Movie box -->
+   <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/w/wa1.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">War </div>
+              <div class="movie-description">
+                  Synopsis. Khalid (Tiger Shroff), an Indian Research and Analysis Wing (RAW) agent, is assigned to eliminate Kabir (Hrithik Roshan), a former soldier-turned-rogue, who mentored Khalid. Col Luthra (Ashutosh Rana) is on a mission to bring Kabir to justice, who seems to be eliminating RAW targets all over the world.<br><br>
+                  <b> DIRECTOR</b>:   Siddharth Anand<br>
+                  <b>WRITER</b>:  Siddharth Anand, Aditya Chopra <br>
+                  <b>STARS</b>:  Hrithik Roshan	,Tiger Shroff ,Vaani Kapoor	 <br>
+                  <b>YEAR</b>:  2019<br>
+                  <b>VIDEO </b>:  <a href="https://youtu.be/XkHV7ROmIVA?feature=shared">https://youtu.be/XkHV7ROmIVA?feature=shared</a><br>
+                  <a href="https://www.imdb.com/title/tt7430722/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/w/wa2.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">Shershaah</div>
+              <div class="movie-description">
+                  Shershaah ( transl. Lion-king) is a 2021 Indian Hindi-language biographical war film based on the life of Vikram Batra, killed in action in the Kargil War, directed by Vishnuvardhan in his Hindi film debut and written by Sandeep Shrivastava.<br><br>
+                  <b> DIRECTOR</b>: Vishnuvardhan<br>
+                  <b>WRITER</b>:Sandeep Shrivastava <br>
+                  <b>STARS</b>:  Sidharth Malhotra	,Kiara Advani <br>
+                  <b>YEAR</b>:  2021<br>
+                  <b>VIDEO </b>:  <a href="https://youtu.be/Q0FTXnefVBA?feature=shared">https://youtu.be/Q0FTXnefVBA?feature=shared</a><br>
+                  <a href="https://www.imdb.com/title/tt10295212/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/w/wa3.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">Brothers</div>
+              <div class="movie-description">
+                  A remake of the 2004 Danish film, it follows Captain Sam Cahill (portrayed by Tobey Maguire), a presumed-dead prisoner of the War in Afghanistan who deals with extreme PTSD while reintegrating into society following his release from captivity.<br><br>
+                  <b> DIRECTOR</b>:  Jim Sheridan<br>
+                  <b>WRITER</b>: David Benioff,Susanne Bier,Anders Thomas Jensen<br>
+                  <b>STARS</b>:  Tobey Maguire ,Tobey Maguire ,Natalie Portman	<br>
+                  <b>YEAR</b>:  2009<br>
+                  <b>VIDEO </b>:  <a href="https://youtu.be/0Jvi7OcEQWM?feature=shared">https://youtu.be/0Jvi7OcEQWM?feature=shared</a><br>
+                  <a href="https://www.imdb.com/title/tt0765010/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/w/wa4.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">Dunkirk</div>
+              <div class="movie-description">
+                  Dunkirk is a 2017 epic historical war thriller film written, directed and co-produced by Christopher Nolan that depicts the Dunkirk evacuation of World War II from the perspectives of the land, sea and air.<br><br>
+                  <b> DIRECTOR</b>:    Christopher Nolan<br>
+                  <b>WRITER</b>:  Christopher Nolan<br>
+                  <b>STARS</b>:  Fionn Whitehead ,Damien Bonnard ,Aneurin Barnard	 <br>
+                  <b>YEAR</b>:  2017<br>
+                  <b>VIDEO </b>:  <a href="https://youtu.be/T7O7BtBnsG4?feature=shared">https://youtu.be/T7O7BtBnsG4?feature=shared</a><br>
+                  <a href="https://www.imdb.com/title/tt5013056/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/w/wa5.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">12 Strong</div>
+              <div class="movie-description">
+                  In the wake of Sept. 11, Capt. Mitch Nelson leads a U.S. Special Forces team into Afghanistan for an extremely dangerous mission. Once there, the soldiers develop an uneasy partnership with the Northern Alliance to take down the Taliban and its al-Qaida allies.<br><br>
+                  <b> DIRECTOR</b>:    Nicolai Fuglsig<br>
+                  <b>WRITER</b>:  Ted Tally ,Peter Craig ,Doug Stanton<br>
+                  <b>STARS</b>:  Chris Hemsworth ,Michael Shannon ,Michael Peña	 <br>
+                  <b>YEAR</b>:  2018<br>
+                  <b>VIDEO </b>:  <a href="https://youtu.be/-Denciie5oA?feature=shared">https://youtu.be/-Denciie5oA?feature=shared</a><br>
+                  <a href="https://www.imdb.com/title/tt1413492/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/w/wa6.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">13 HOURS</div>
+              <div class="movie-description">
+                  The film follows six members of the Annex Security Team who fought to defend the American diplomatic compound in Benghazi, Libya after waves of attacks by militants on September 11, 2012.<br><br>
+                  <b> DIRECTOR</b>:    Michael Bay<br>
+                  <b>WRITER</b>: Chuck Hogan ,Mitchell Zuckoff <br>
+                  <b>STARS</b>:  John Krasinski	 , James Badge Dale	 ,Pablo Schreiber	 <br>
+                  <b>YEAR</b>:  2016<br>
+                  <b>VIDEO </b>:  <a href="https://youtu.be/uTKacYwfE7Y?feature=shared">https://youtu.be/uTKacYwfE7Y?feature=shared</a><br>
+                  <a href="https://www.imdb.com/title/tt4172430/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/w/wa7.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">Operation Red Sea</div>
+              <div class="movie-description">
+                  The story takes place on the Arabian peninsula where a group of terrorists overthrows a weak government. The People's Liberation Army Special Operations Forces are given order to evacuate Chinese personnel and workers from the country. They must save a hostage from a heavily guarded terrorist stronghold.<br><br>
+                  <b> DIRECTOR</b>:   Dante Lam<br>
+                  <b>WRITER</b>: Zhuzhu Chen ,Ji Feng	 <br>
+                  <b>STARS</b>Yi Zhang ,Johnny Huang ,Hai-Qing <br>
+                  <b>YEAR</b>:  2018<br>
+                  <b>VIDEO </b>:  <a href="https://youtu.be/w2dbIXyB5yY?feature=shared">https://youtu.be/w2dbIXyB5yY?feature=shared</a><br>
+                  <a href="https://www.imdb.com/title/tt6878882/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/w/wa8.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">Fury</div>
+              <div class="movie-description">
+                  Fury is a 2014 American war film written, directed, and co-produced by David Ayer. It stars Brad Pitt with Shia LaBeouf, Logan Lerman, Michael Peña, and Jon Bernthal as members of an American tank crew fighting in Nazi Germany during the final weeks of the European theater of World War II.<br><br>
+                  <b> DIRECTOR</b>:    David Ayer<br>
+                  <b>WRITER</b>:  David Ayer<br>
+                  <b>STARS</b>:  Brad Pitt	,Shia LaBeouf ,Logan Lerman	 <br>
+                  <b>YEAR</b>:  2014<br>
+                  <b>VIDEO </b>:  <a href="https://youtu.be/q94n3eWOWXM?feature=shared">https://youtu.be/q94n3eWOWXM?feature=shared</a><br>
+                  <a href="https://www.imdb.com/title/tt2713180/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/w/wa9.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Midway</div>
+            <div class="movie-description">
+                The story of the Battle of Midway, told by the leaders and the sailors who fought it. MIDWAY centers on the Battle of Midway, a clash between the American fleet and the Imperial Japanese Navy which marked a pivotal turning point in the Pacific Theater during WWII<br><br>
+                <b> DIRECTOR</b>:   Roland Emmerich
+                <br>
+                <b>WRITER</b>:  Wes Tooke
+                <br>
+                <b>STARS</b>:  Ed Skrein ,Patrick Wilson ,Woody Harrelson	<br>
+                <b>YEAR</b>:  2019<br>
+                <b>VIDEO </b>:  <a href="https://youtu.be/BfTYY_pac8o?feature=shared">https://youtu.be/BfTYY_pac8o?feature=shared</a><br>
+                <a href="https://www.imdb.com/title/tt6924650/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/w/wa10.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">Greyhound </div>
+              <div class="movie-description">
+                  The film is based on the 1955 novel The Good Shepherd by C. S. Forester, and follows a US Navy commander on his first assignment commanding a multi-national escort destroyer group of four, defending an Allied convoy from U-boats during the Battle of the Atlantic.<br><br>
+                  <b> DIRECTOR</b>:   Aaron Schneider
+                  <br>
+                  <b>WRITER</b>:  Tom Hanks ,C.S. Forester<br>
+                  <b>STARS</b>:  Tom Hanks ,Tom Hanks ,Tom Hanks<br>
+                  <b>YEAR</b>:  2020<br>
+                  <b>VIDEO </b>:  <a href="https://youtu.be/eyzxu26-Wqk?feature=shared">https://youtu.be/eyzxu26-Wqk?feature=shared</a><br>
+                  <a href="https://www.imdb.com/title/tt6048922/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/w/wa11.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">Devotion </div>
+              <div class="movie-description">
+                  Devotion, an aerial war epic based on the bestselling book of the same name, tells the harrowing true story of two elite US Navy fighter pilots during the Korean War. Their heroic sacrifices would ultimately make them the Navy's most celebrated wingmen.<br><br>
+                  <b> DIRECTOR</b>:  J.D. Dillard                  <br>
+                  <b>WRITER</b>:  Jake Crane ,Jonathan Stewart ,Adam Makos
+                  <br>
+                  <b>STARS</b>:  Jonathan Majors ,Glen Powell ,Christina Jackson<br>
+                  <b>YEAR</b>:  2022<br>
+                  <b>VIDEO </b>:  <a href="https://youtu.be/NCDEGP6VjYY?featureshared">https://youtu.be/NCDEGP6VjYY?featureshared</a><br>
+                  <a href="https://www.imdb.com/title/tt7693316/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/w/wa12.jpg" alt="Blank Image">
+          <div class="movie-details">
+              <div class="movie-title">The Forgotten Battle</div>
+              <div class="movie-description">
+                  During WWII's crucial Battle of the Scheldt, the lives of a glider pilot, a Nazi soldier and a reluctant Resistance recruit tragically intersect.<br><br>
+                  <b> DIRECTOR</b>:    Matthijs van Heijningen Jr.
+                  <br>
+                  <b>WRITER</b>:  Paula van der Oest	 <br>
+                  <b>STARS</b>:  Gijs Blom	,Gijs Blom	,Gijs Blom	 <br>
+                  <b>YEAR</b>:  2022<br>
+                  <b>VIDEO </b>:  <a href="https://www.youtube.com/watch?v=LZDdWJ_swOs">https://www.youtube.com/watch?v=LZDdWJ_swOs</a><br>
+                  <a href="https://www.imdb.com/title/tt10521092/?ref_=ext_shr_lnk"><b>MORE DETAILS</b></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="back-button" href="western_recommendations.html"><button>somethng new</button></a>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // JavaScript code goes here
+    window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+  </script>
+
+</body>
+
+</html>

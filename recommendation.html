@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRecommenderz</title>
+    <style>
+        /* CSS Styles */
+        body {
+            background: linear-gradient(135deg, #000000, #ff0000); /* Inverted gradient */
+            color: #ffffff;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .content-section {
+            margin: 50px auto;
+            width: 80%;
+            text-align: center;
+        }
+
+        .window {
+            width: 500px;
+            height: 500px;
+            background: #a00a0a #ffffff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid #000000;
+            border-radius: 10%;
+            box-shadow: 0 0 20px 10px #da3232;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+            padding: 20px;
+            box-sizing: border-box;
+            
+        }
+
+        .genre-button {
+            background-color: #e60e0e;
+            color: #ffffff;
+            border: 2px solid black;
+            border-radius: 10%;
+            width: 100px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            margin: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .genre-button:hover {
+            box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+        }
+
+        .recommend-button {
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            margin: auto;
+            font-size: 20px;
+            font-weight: bold;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .recommend-button:hover {
+            box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .loader {
+            width: 250px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-family: helvetica, arial, sans-serif;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: #ffffff; /* Loader color */
+            letter-spacing: 0.2em;
+            display: none; /* Hide initially */
+        }
+
+        .loader::before,
+        .loader::after {
+            content: "";
+            display: block;
+            width: 15px;
+            height: 15px;
+            background: #f5f2f2; /* Loader color */
+            position: absolute;
+            animation: load .7s infinite alternate ease-in-out;
+        }
+
+        .loader::before {
+            top: 0;
+        }
+
+        .loader::after {
+            bottom: 0;
+        }
+
+        @keyframes load {
+            0% { left: 0; height: 30px; width: 15px }
+            50% { height: 8px; width: 40px }
+            100% { left: 235px; height: 30px; width: 15px}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-section">
+        <h2>Content-based Recommendations</h2>
+        <p>Content-based recommendation systems are a cornerstone of modern digital platforms, offering users personalized suggestions based on item characteristics and user preferences. These systems utilize advanced algorithms to analyze content attributes, user interactions, and similarities between items to generate tailored recommendations. With applications spanning e-commerce, media streaming, news aggregation, and job matching platforms, content-based recommendation systems enhance user experiences and drive engagement. Through this comprehensive exploration, we'll delve into the intricacies of content-based recommendation systems, their underlying principles, methodologies, applications, challenges, and future prospects. Content-based recommendation systems operate on the premise of understanding both items and users to facilitate accurate recommendations. The process begins with representing items in a structured manner by extracting relevant features or attributes. For example, in movie recommendation systems, attributes such as genre, director, actors, plot keywords, and user ratings are considered. Concurrently, user profiling is conducted to capture user preferences and interests.</p>
+    </div>
+
+    <div class="window">
+        <button class="genre-button action" onclick="selectGenre('action')">Action</button>
+        <button class="genre-button crime" onclick="selectGenre('crime')">Crime</button>
+        <button class="genre-button fantasy" onclick="selectGenre('fantasy')">Fantasy</button>
+        <button class="genre-button horror" onclick="selectGenre('horror')">Horror</button>
+        <button class="genre-button romance" onclick="selectGenre('romance')">Romance</button>
+        <button class="genre-button science-fiction" onclick="selectGenre('science-fiction')">Science Fiction</button>
+        <button class="genre-button slice-of-life" onclick="selectGenre('slice-of-life')">Slice of Life</button>
+        <button class="genre-button sports" onclick="selectGenre('sports')">Sports</button>
+        <button class="genre-button thriller" onclick="selectGenre('thriller')">Thriller</button>
+        <button class="genre-button war" onclick="selectGenre('war')">War</button>
+        <button class="genre-button western" onclick="selectGenre('western')">Western</button>
+        <button class="recommend-button" onclick="recommendMovies()">Recommend Movies</button>
+    </div>
+
+    <div class="loader">Loading...</div>
+
+    <script>
+        let selectedGenre = null;
+
+        function selectGenre(genre) {
+            selectedGenre = genre;
+        }
+
+        function recommendMovies() {
+            if (selectedGenre) {
+                // Show loading animation
+                document.querySelector('.loader').style.display = 'block';
+                
+                // Redirect to a page based on the selected genre after a delay
+                setTimeout(function() {
+                    window.location.href = selectedGenre + "_recommendations.html";
+                }, 2000); // Adjust the delay time as needed (in milliseconds)
+            } else {
+                // Inform the user to select a genre first
+                alert("Please select a genre first.");
+            }
+        }
+    </script>
+</body>
+
+</html>

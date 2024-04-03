@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category: Slice Of Life</title> 
+  <style>
+    /* CSS Styles */
+    body {
+      background: linear-gradient(135deg, #06cc06, #dee202); /* Reddish dark grey gradient */
+      color: #ffffff;
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .category-heading {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            background-color: rgba(7, 131, 2, 0.589); /* Semi-transparent white */
+            border-radius: 50px;
+            padding: 10px 10px; /* Add padding */
+            border: 2px solid #ffffff; /* Add border */
+        }
+
+    .movie-box {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(248, 241, 241, 0.3); /* White shadow */
+      transition: box-shadow 0.2s ease-in-out; /* Smooth transition */
+      border: 0.15px solid#ffffff;    }
+
+    .movie-box:hover {
+      box-shadow: 0 0 20px rgb(14, 11, 11); /* White shadow on hover */
+    }
+
+    .movie-image {
+      width: 150px;
+      height: auto;
+      margin-right: 20px;
+      border-radius: 5%;
+      border: 2px solid#ffffff;
+    }
+
+    .movie-details {
+      flex: 1;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .movie-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+
+    .movie-description {
+      font-size: 16px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .back-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+ /* Style the "Something New" button */
+ .back-button button {
+    padding: 20%;
+      background-color: #09f709; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    /* Change the button color on hover */
+    .back-button button:hover {
+        box-shadow: 0 0 20px rgb(10, 9, 9); /* White shadow on hover */
+    }
+    .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3ededea;
+  transition: opacity 15s, visibility 3s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #0c0a0a;
+  border-top-color: #ee0707;
+  border-radius: 50%;
+  animation: loading 0.5s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="loader"></div>
+  <!-- Category heading -->
+  <div class="category-heading">Category: Slice Of Life</div>
+
+  <!-- Movie box -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sl/sl1.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Black</div>
+            <div class="movie-description">The cathartic tale of a young woman who can't see, hear, or speak, and the teacher who brings a ray of light into her dark world. The cathartic tale of a young woman who can't see, hear, or speak, and the teacher who brings a ray of light into her dark world.<br><br>
+             <b> DIRECTOR</b>:     Sanjay Leela Bhansali<br>
+             <b>WRITER</b>:   Sanjay Leela Bhansali <br>  
+             <b>STARS</b>:   Amitabh Bachchan, Rani Mukerji, Shernaz Patel, Ayesha Kapur<br>
+             <b>YEAR</b>:  2005<br>
+             <a href="https://www.imdb.com/title/tt0375611/?ref_=ttls_li_tt"><b>MORE DETAILS</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sl/sl2.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Zindagi Na Milegi Dobara </div>
+            <div class="movie-description">Three friends on an adventurous road trip/bachelor party in Spain learn some lessons about themselves and each other that will change them forever. Watch all you want.
+              <br><br>
+              <b> DIRECTOR</b>:Zoya Akhtar<br>
+              <b>WRITER</b>: Zoya Akhtar <br>  
+              <b>STARS</b>:  : Hrithik Roshan, Farhan Akhtar, Abhay Deol, Katrina Kaif <br>
+              <b>YEAR</b>:  2011<br>
+              <a href="https://www.imdb.com/title/tt1562872/?ref_=ttls_li_tt"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sl/sl3.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Ustad Hotel </div>
+            <div class="movie-description">The story is about a young man named Faizal, known as Faizi (Dulquer), who studies in Switzerland as a chef against the wishes of his father (Siddique). When this matter comes to light, his father snatches away his passport to prevent him from taking up his new job in the UK.
+            <br><br>
+              <b> DIRECTOR</b>:   Anwar Rasheed <br>
+              <b>WRITER</b>:  Anwar Rasheed <br>  
+              <b>STARS</b>:   Dulquer Salmaan, Thilakan, Siddique, Nithya Menen<br>
+              <b>YEAR</b>:  2012<br>
+              <a href="https://www.imdb.com/title/tt2218988/?ref_=ttls_li_tt"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sl/sl4.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title"> Bajrangi Bhaijaan </div>
+            <div class="movie-description">Bajrangi Bhaijaan is an action action romantic drama movie directed by Kabir Khan. It's a man - (Pavan / Bajrangi) on mission story about a little girl from Pakistan lost in India and how she is reunited with her country and family with the help of Bajrani Bhaijaan
+              <br><br>
+              <b> DIRECTOR</b>:   Kabir Khan<br>
+              <b>STARS</b>:  Salman Khan, Harshaali Malhotra, Nawazuddin Siddiqui, Kareena Kapoor <br>
+              <b>YEAR</b>:  2015<br>
+              <a href="https://www.imdb.com/title/tt3863552/?ref_=ttls_li_tt"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sl/sl5.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">English Vinglish</div>
+            <div class="movie-description">A quiet, sweet tempered housewife endures small slights from her well-educated husband and daughter every day because of her inability to speak and understand English. A woman who does not know English is made to feel insecure by her family and society at large <br><br>
+              <b> DIRECTOR</b>:     Gauri Shinde <br>
+              <b>WRITER</b>:  Gauri Shinde  <br>  
+              <b>STARS</b>:  Sridevi, Adil Hussain, Mehdi Nebbou, Priya Anand  <br>
+              <b>YEAR</b>:  2012<br>
+              <a href="https://www.imdb.com/title/tt2181931/?ref_=ttls_li_tt"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sl/sl6.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Queen</div>
+            <div class="movie-description">The film follows the story of Rani Mehra, a diffident Punjabi girl from New Delhi who embarks on her honeymoon to Paris and Amsterdam by herself after her fiancé calls off their wedding. Bahl co-wrote the script of Queen with Chaitally Parmar and Parveez Shaikh.<br><br>
+              <b> DIRECTOR</b>:    Vikas Bahl <br>
+              <b>STARS</b>:  Kangana Ranaut, Rajkummar Rao, Lisa Haydon, Jeffrey Ho <br>
+              <b>YEAR</b>:  2013<br>
+              <a href="https://www.imdb.com/title/tt3322420/?ref_=ttls_li_tt"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sl/sl7.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Dear zindagi</div>
+            <div class="movie-description">Kaira is a budding cinematographer in search of a perfect life. Her encounter with Jug, an unconventional thinker, helps her gain a new perspective on life. She discovers that happiness is all about finding comfort in life's imperfections.<br><br>
+              <b> DIRECTOR</b>:    Gauri Shinde<br>
+              <b>WRITER</b>:Gauri Shinde <br>  
+              <b>STARS</b>:   Alia Bhatt, Shah Rukh Khan, Kunal Kapoor, Priyanka Moodley <br>
+              <b>YEAR</b>:  2016<br>
+              <a href="https://www.imdb.com/title/tt5946128/?ref_=ttls_li_tt"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sl/sl8.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">3 idiots</div>
+            <div class="movie-description">In college, Farhan and Raju form a great bond with Rancho due to his positive and refreshing outlook to life. Years later, a bet gives them a chance to look for their long-lost friend whose existence seems rather elusive.<br><br>
+              <b> DIRECTOR</b>:      Rajkumar Hirani<br>
+              <b>WRITER</b>: Abhijat JoshiRajkumar HiraniVidhu Vinod Chopra <br>  
+              <b>STARS</b>:  Aamir Khan,Madhavan ,Mona Singh<br>
+              <b>YEAR</b>:  2009<br>
+              <a href="https://www.imdb.com/title/tt1187043/"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sl/sl9.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title"> Anbe Sivam </div>
+            <div class="movie-description">Two men, one young and arrogant, the other damaged - physically but not spiritually - by life, are thrown together by circumstances, and find that they are in some ways bound together by fate .Anbarasu, an advertisement-filmmaker, goes to Bhubaneshwar on a business trip and gets stranded at an airport due to heavy rains. His life takes a turn when he meets Nallasivam, a co-passenger and befriends him.<br><br>
+              <b> DIRECTOR</b>:     Sundar C.<br>
+              <b>WRITER</b>:  Sundar C. <br>  
+              <b>STARS</b>:   Kamal Haasan, Madhavan, Kiran Rathod, Nassar<br>
+              <b>YEAR</b>:  2003<br>
+              <a href="https://www.imdb.com/title/tt0367495/?ref_=ttls_li_tt"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sl/sl10.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Vedam</div>
+            <div class="movie-description">Stories of 5 people, an educated slum dweller, an aspiring rock star, an old villager, a prostitute and an ostracized Muslim man; all lead up to a night in a hospital filled with jeopardy              <br><br>
+              <b> DIRECTOR</b>:     Radha Krishna Jagarlamudi<br>
+              <b>WRITER</b>:  Radha Krishna Jagarlamudi <br>  
+              <b>STARS</b>:   Allu Arjun, Anushka Shetty, Manoj Kumar Manchu, Manoj Bajpayee <br>
+              <b>YEAR</b>:  2010<br>
+              <a href="https://www.imdb.com/title/tt1649431/?ref_=ttls_li_tt"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sl/sl11.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Premam</div>
+            <div class="movie-description">A young man has three opportunities to find love. Will the third time be the charm?  While George's first love turns out to be a disappointment, Malar, a college lecturer, rekindles his love interest. His romantic journey takes him through several stages, helping him find his purpos            .<br><br>
+              <b> DIRECTOR</b>:    Alphonse Puthren <br>
+              <b>STARS</b>: Nivin Pauly, Sai Pallavi, Madonna Sebastian, S.V. Krishna Shankar <br>
+              <b>YEAR</b>:  2015<br>
+              <a href="https://www.imdb.com/title/tt4679210/?ref_=ttls_li_tt"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sl/sl12.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Udaan</div>
+            <div class="movie-description">Expelled from his school, a 16-year old boy returns home to his abusive and oppressive father. Following his expulsion from boarding school, Rohan (Rajat Barmecha) returns home to his strict and uncompromising father (Ronit Roy) and Arjun (Aayan Boradia), a 6-year-old half brother nobody bothered to tell him about. While his father demands he take engineering classes, Rohan just wants to be a writer. In between classes and late-night drinking bouts at the bar, Rohan begins to bond with Arjun, with whom he learns he has more in common than he initially thought.      <br><br>
+              <b> DIRECTOR</b>:    Vikramaditya Motwane <br>
+              <b>WRITER</b>:  Vikramaditya Motwane  <br>  
+              <b>STARS</b>:   Rajat Barmecha, Ronit Roy, Manjot Singh, Ram Kapoor <br>
+              <b>YEAR</b>:  2010<br>
+              <a href="https://www.imdb.com/title/tt1639426/?ref_=ttls_li_tt"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="back-button" href="sports_recommendations.html"><button>somethng new</button></a>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // JavaScript code goes here
+    window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+  </script>
+
+</body>
+
+</html>

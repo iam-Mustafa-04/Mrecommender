@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category: Sports</title> 
+  <style>
+    /* CSS Styles */
+    body {
+      background: linear-gradient(135deg, #02ebfc, #4804e7); /* Reddish dark grey gradient */
+      color: #ffffff;
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .category-heading {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            background-color: rgb(8, 156, 149); /* Semi-transparent white */
+            border-radius: 50px;
+            padding: 10px 10px; /* Add padding */
+            border: 2px solid #ffffff; /* Add border */
+        }
+
+    .movie-box {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(248, 241, 241, 0.3); /* White shadow */
+      transition: box-shadow 0.2s ease-in-out; /* Smooth transition */
+      border: 0.15px solid#ffffff;    }
+
+    .movie-box:hover {
+      box-shadow: 0 0 20px rgb(24, 23, 23); /* White shadow on hover */
+    }
+
+    .movie-image {
+      width: 150px;
+      height: auto;
+      margin-right: 20px;
+      border-radius: 5%;
+      border: 2px solid#ffffff;
+    }
+
+    .movie-details {
+      flex: 1;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .movie-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+
+    .movie-description {
+      font-size: 16px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .back-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+ /* Style the "Something New" button */
+ .back-button button {
+    padding: 20%;
+      background-color: #09c0f7; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    /* Change the button color on hover */
+    .back-button button:hover {
+        box-shadow: 0 0 20px rgb(14, 1, 1); /* White shadow on hover */
+    }
+    .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a0aea;
+  transition: opacity 15s, visibility 3s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #f1eded;
+  border-top-color: #014e66;
+  border-radius: 50%;
+  animation: loading 0.5s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="loader"></div>
+  <!-- Category heading -->
+  <div class="category-heading">Category: Sports</div>
+
+  <!-- Movie box -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sp/sp1.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Le Mans '66</div>
+            <div class="movie-description">American car designer Carroll Shelby and driver Ken Miles battle corporate interference and the laws of physics to build a revolutionary race car for Ford in order to defeat Ferrari at the 24 Hours of Le Mans in 1966..<br><br>
+              <b> DIRECTOR</b>:     James Mangold<br>
+             <b>WRITER</b>:Jez Butterworth,John-Henry ,Butterworth,Jason Keller<br>  
+             <b>STARS</b>:  Matt Damon,Christian Bale,Jon Bernthal <br>
+             <b>YEAR</b>:  2019<br>
+             <a href="https://www.imdb.com/title/tt1950186/?ref_=sr_t_1"><b>MORE DETAILS</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sp/sp2.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">The Iron Claw</div>
+            <div class="movie-description">The true story of the inseparable Von Erich brothers, who made history in the intensely competitive world of professional wrestling in the early 1980s.<br><br>
+              <b> DIRECTOR</b>:    Sean Durkin<br>
+              <b>WRITER</b>:         Sean Durkin<br>  
+              <b>STARS</b>:  Zac Efron,Jeremy Allen White,Harris Dickinson<br>
+              <b>YEAR</b>:  2023<br>
+              <a href="https://www.imdb.com/title/tt21064584/?ref_=sr_t_2"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sp/sp3.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Cobra Kai</div>
+            <div class="movie-description">COBRA KAI takes place over 30 years after the events of the 1984 All Valley Karate Tournament with the continuation of the inescapable conflict between Daniel LaRusso (Ralph Macchio) and Johnny Lawrence (William Zabka).<br><br><br><br>
+              <b> DIRECTOR</b>:  Anthony Russo,Joe Russo<br>
+              <b>WRITER</b>: Christopher Markus,Stephen McFeely,Stan Lee <br>  
+              <b>STARS</b>:  rs Robert Downey Jr, Chris Hemsworth ,Mark Ruffalo<br>
+              <b>YEAR</b>:  2018-2024<br>
+              <a href="https://www.imdb.com/title/tt7221388/?ref_=sr_t_8"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sp/sp4.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Mortal Kombat</div>
+            <div class="movie-description">Mortal Kombat is an American media franchise centered on a series of fighting video games originally developed by Midway Games in 1992.
+              The original Mortal Kombat arcade game spawned a franchise consisting of action-adventure games, a comic book series, a card game, films, an animated TV series, and a live-action tour. Mortal Kombat has become the best-selling fighting game franchise worldwide and one of the highest-grossing media franchises of all time..<br><br>
+              <b> DIRECTOR</b>:              Simon McQuoid<br>
+              <b>WRITER</b>: Greg Russo, Dave Callaham,  Oren Uziel<br>  
+              <b>STARS</b>:            Lewis Tan,  Jessica McNamee, Josh Lawson <br>
+              <b>YEAR</b>:  2021<br>
+              <a href="https://www.imdb.com/title/tt0293429/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Mortal%2520Komba"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sp/sp5.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Shabaash Mithu (Hindi)</div>
+            <div class="movie-description">Shabaash Mithu is a 2022 Indian Hindi-language biographical sports drama film directed by Srijit Mukherji and produced by Viacom18 Studios. The film based on the life of former Test and ODI captain of the India women's national cricket team, Mithali Raj, stars Taapsee Pannu in title role. It chronicles ups and downs and moments of glory of Mithali's life. The film was released on 15 July 2022.[4] It received mixed to positive reviews from critics but was a major box-office disaster, grossing just under a tenth of its budget at the box office.[5][6].<br><br>
+              <b> DIRECTOR</b>:     Srijit Mukherji<br>
+              <b>WRITER</b>: Priya Aven, Vijay Maurya, Mohd Raheem <br>  
+              <b>STARS</b>: Taapsee Pannu, Vijay Raaz, Brijendra Kala <br>
+              <b>YEAR</b>:  2022<br>
+              <a href="https://www.imdb.com/title/tt6265050/?ref_=nv_sr_srsg_0_tt_6_nm_2_q_shabaash"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sp/sp6.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Gran Turismo: Based on a True Story</div>
+            <div class="movie-description">Based on the unbelievable, inspiring true story of a team of underdogs - a struggling, working-class gamer, a failed former race car driver, and an idealistic motorsport exec - who risk it all to take on the most elite sport in the world.            .<br><br>
+              <b> DIRECTOR</b>:             Neill Blomkamp<br>
+              <b>WRITER</b>:           Jason Hall.Zach Baylin.Alex Tse<br>  
+              <b>STARS</b>:  David Harbour.Orlando Bloom,Archie Madekwe <br>
+              <b>YEAR</b>:  2023<br>
+              <a href="https://www.imdb.com/title/tt4495098/?ref_=nv_sr_srsg_0_tt_3_nm_5_q_gran%2520"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sp/sp7.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Shaolin Soccer</div>
+            <div class="movie-description">Shaolin Soccer (Chinese: 少林足球) is a 2001 Hong Kong sports comedy film directed by Stephen Chow, who also stars in the lead role. The film revolves around a former Shaolin monk who reunites his five brothers,[note 1] years after their master's death, to apply their superhuman martial arts skills to play soccer and bring Shaolin kung fu to the masses..<br><br>
+              <b> DIRECTOR</b>:               Stephen Chow<br>
+              <b>WRITER</b>:               Stephen Chow <br>  
+              <b>STARS</b>:  Stephen ChowWei ZhaoYat-Fei Wong <br>
+              <b>YEAR</b>:  2001<br>
+              <a href="https://www.imdb.com/title/tt0286112/"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sp/sp8.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Lagaan</div>
+            <div class="movie-description">Lagaan: Once Upon a Time in India, or simply Lagaan, (transl. Land tax) is a 2001 Indian Hindi-language epic period musical[5] sports drama film written and directed by Ashutosh Gowariker. The film was produced by Aamir Khan, who stars alongside debutant Gracy Singh and British actors Rachel Shelley and Paul Blackthorne. Set in 1893, during the late Victorian period of British colonial rule in India, the film follows the inhabitants of a village in Central India, who, burdened by high taxes and several years of drought, are challenged by an arrogant British Indian Army officer to a game of cricket as a wager to avoid paying the taxes they owe. The villagers face the arduous task of learning a game that is alien to them and play for a victory.            .<br><br>
+              <b> DIRECTOR</b>:              Ashutosh Gowariker<br>
+              <b>WRITER</b>:               Ashutosh Gowariker,Kumar Dave,Sanjay Dayma <br>  
+              <b>STARS</b>:                Aamir Khan,Raghubir Yadav,Gracy Singh<br>
+              <b>YEAR</b>:  2001<br>
+              <a href="https://www.imdb.com/title/tt0169102/"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sp/sp9.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Jersey</div>
+            <div class="movie-description">.<br><br>
+              <b> DIRECTOR</b>:       Gowtam Tinnanuri<br>
+              <b>WRITER</b>: Mayank Jai,  nWajid Shaikh, Siddharth Singh<br>  
+              <b>STARS</b>: Shahid Kapoor, Mrunal Thakur,  Pankaj Kapur<br>
+              <b>YEAR</b>:  2022<br>
+              <a href="https://www.imdb.com/title/tt5301942/?ref_=nv_sr_srsg_5_tt_8_nm_0_q_Jersey"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sp/sp10.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Mary Kom</div>
+            <div class="movie-description">Mary Kom is a 2014 Indian Hindi-language biographical sports film based on the life of the eponymous boxer Mary Kom, directed by Omung Kumar and produced by Viacom18 Motion Pictures and Sanjay Leela Bhansali. The film stars Priyanka Chopra in the lead role, with newcomer Darshan Kumar and Sunil Thapa in supporting roles of her husband and mentor, respectively, and depicts Kom's journey of becoming a boxer to her victory at the 2008 World Boxing Championships in Ningbo. The film marks the Hindi playback singing debut of Chopra, who provided her vocals for a song named "Chaoro" (a lullaby).<br><br>
+              <b> DIRECTOR</b>:    Omung Kumar<br>
+              <b>WRITER</b>: Saiwyn Quadras,Ramendra Vasishth,Karan Singh Rathore <br>  
+              <b>STARS</b>: Priyanka Chopra Jonas,Sunil Thapa,Robin Das <br>
+              <b>YEAR</b>:  2014<br>
+              <a href="https://www.imdb.com/title/tt3001638/"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sp/sp11.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">chain khuli main khuli</div>
+            <div class="movie-description">Karan is a thirteen-year-old boy who lives in a dilapidated orphanage owned by a stern, uncouth warden, John "Hitler" Kakkad. Karan has two dreams: one is to have parents and the other is to be a big cricketer. His inspiration is Kapil Dev, since he has been brought up being motivated by his skills. His dreams take a turn when one day, he lays his hands on an old cricket bat which Karan is convinced is the bat that Kapil Dev used to win the 1983 World Cup; for him, the bat becomes a magic bat. One day by a stroke of luck, the coach of the Indian cricket team spots Karan playing cricket and is highly impressed by his batting skills. At that point in time, the Indian cricket team has been going through a "rough patch". .<br><br>
+              <b> DIRECTOR</b>:   Karanjeet Saluja<br>
+              <b>WRITER</b>:     Nupur Asthana, Jay Shewakraman, iIrfan Siddiqui<br>  
+              <b>STARS</b>:     Zain Khan, Rahul Bose, Kapil Dev <br>
+              <b>YEAR</b>:  2007<br>
+              <a href="https://www.imdb.com/title/tt1016159/"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/sp/sp12.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">M.S. Dhoni: The Untold Story</div>
+            <div class="movie-description">M.S. Dhoni: The Untold Story is a 2016 Indian Hindi-language biographical sports drama film written and directed by Neeraj Pandey. It is based on the life of former Test, ODI and T20I captain of the Indian national cricket team, Mahendra Singh Dhoni. The film stars the late Sushant Singh Rajput as MS Dhoni, along with Disha Patani, Kiara Advani, and Anupam Kher. The film chronicles the life of Dhoni from a young age through a series of life events.             .<br><br>
+              <b> DIRECTOR</b>:   Mathur Goswami, Neeraj Pandey<br>
+              <b>WRITER</b>:  Neeraj Pandey, Dilip Jha, Guru Thakur <br>  
+              <b>STARS</b>:     Sushant Singh Rajput, Kiara Advani, Disha Patani <br>
+              <b>YEAR</b>:  2016<br>
+              <a href="https://www.imdb.com/title/tt4169250/?ref_=nv_sr_srsg_0_tt_6_nm_2_q_ms%2520dho"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="back-button" href="war_recommendations.html"><button>somethng new</button></a>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // JavaScript code goes here
+    window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category: Action</title> 
+  <style>
+    /* CSS Styles */
+    body {
+      background: linear-gradient(135deg, #ce0707, #1a1a1a); /* Reddish dark grey gradient */
+      color: #ffffff;
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .category-heading {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            background-color: rgba(133, 2, 2, 0.589); /* Semi-transparent white */
+            border-radius: 50px;
+            padding: 10px 10px; /* Add padding */
+            border: 2px solid #ffffff; /* Add border */
+        }
+
+    .movie-box {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(248, 241, 241, 0.3); /* White shadow */
+      transition: box-shadow 0.2s ease-in-out; /* Smooth transition */
+      border: 0.15px solid#ffffff;
+    }
+
+    .movie-box:hover {
+      box-shadow: 0 0 20px rgb(255, 255, 255); /* White shadow on hover */
+    }
+
+    .movie-image {
+      width: 150px;
+      height: auto;
+      margin-right: 20px;
+      border-radius: 5%;
+      border: 2px solid#ffffff;
+    }
+
+    .movie-details {
+      flex: 1;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .movie-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+
+    .movie-description {
+      font-size: 16px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .back-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+ /* Style the "Something New" button */
+ .back-button button {
+    padding: 20%;
+      background-color: #f70909; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    /* Change the button color on hover */
+    .back-button button:hover {
+        box-shadow: 0 0 20px rgb(255, 255, 255); /* White shadow on hover */
+    }
+
+    .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0909ea;
+  transition: opacity 15s, visibility 3s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #fcfafa;
+  border-top-color: #f70101;
+  border-radius: 50%;
+  animation: loading 0.5s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="loader"></div>
+
+  <!-- Category heading -->
+  <div class="category-heading">Category: Action</div>
+
+  <!-- Movie box -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/a/a1.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Fist of Fury</div>
+            <div class="movie-description">A young man seeks vengence for the death of his teacher.Chen Zhen leaves his homeland of China and relocates to stay with family in Thailand. Chen, who swore to his mother that he would avoid violence in his new life and even wears a necklace to remind himself of this oath, is tested when he confronts trouble at his job. When he finds out the factory he works at is a cover for a drug ring, and his family members are murdered by members of the gang, he can avoid fighting no more and decides to confront his corrupt boss.<br><br>
+             <b> DIRECTOR</b>:    Wei Lo<br>
+             <b>WRITER</b>:  Wei Lo <br>  
+             <b>STARS</b>:  Bruce lee , nora miao ,james tian <br>
+             <b>YEAR</b>:  1972<br>
+             <b>VIDEO </b>:  <a href="https://www.youtube.com/watch?v=LZDdWJ_swOs">https://www.youtube.com/watch?v=LZDdWJ_swOs</a><br>
+             <a href="https://www.imdb.com/title/tt0068767/?ref_=nv_sr_srsg_4_tt_5_nm_3_q_fist%2520"><b>MORE DETAILS</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/a/a2.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Thor Ragnarok</div>
+            <div class="movie-description">Thor is imprisoned on the other side of the universe without his mighty hammer and finds himself in a race against time to get back to Asgard to stop Ragnarok—the destruction of his homeworld and the end of Asgardian civilization—at the hands of an all-powerful new threat, the ruthless Hela.<br><br>
+              <b> DIRECTOR</b>: Taika Waititi<br>
+              <b>WRITER</b>:  Eric Pearson, Craig Kyle, Christopher L. Yost <br>  
+              <b>STARS</b>:  Chris Hemsworth, Tom Hiddleston, Cate Blanchett <br>
+              <b>YEAR</b>:  2017<br>
+              <b>VIDEO </b>:  <a href="https://www.youtube.com/watch?v=ue80QwXMRHg">https://www.youtube.com/watch?v=ue80QwXMRHg</a><br>
+              <a href="https://www.imdb.com/title/tt3501632/?ref_=nv_sr_srsg_3_tt_4_nm_4_q_thor"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/a/a3.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Avengers : Infinity Wars</div>
+            <div class="movie-description">The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.
+              <br><br>
+              <b> DIRECTOR</b>:  Anthony Russo,Joe Russo<br>
+              <b>WRITER</b>: Christopher Markus,Stephen McFeely,Stan Lee <br>  
+              <b>STARS</b>:  rs Robert Downey Jr, Chris Hemsworth ,Mark Ruffalo<br>
+              <b>YEAR</b>:  2018<br>
+              <b>VIDEO </b>:  <a href="https://www.youtube.com/watch?v=6ZfuNTqbHE8">https://www.youtube.com/watch?v=6ZfuNTqbHE8</a><br>
+              <a href="https://www.imdb.com/title/tt4154756/fullcredits?ref_=tt_ov_st_sm"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/a/a4.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Rampage</div>
+            <div class="movie-description">A young man seeks vengence for the death of his teacher.Chen Zhen leaves his homeland of China and relocates to stay with family in Thailand. Chen, who swore to his mother that he would avoid violence in his new life and even wears a necklace to remind himself of this oath, is tested when he confronts trouble at his job. When he finds out the factory he works at is a cover for a drug ring, and his family members are murdered by members of the gang, he can avoid fighting no more and decides to confront his corrupt boss.<br><br>
+              <b> DIRECTOR</b>:    Wei Lo<br>
+              <b>WRITER</b>:  Wei Lo <br>  
+              <b>STARS</b>:  Bruce lee , nora miao ,james tian <br>
+              <b>YEAR</b>:  1972<br>
+              <b>VIDEO </b>:  <a href="https://www.youtube.com/watch?v=LZDdWJ_swOs">https://www.youtube.com/watch?v=LZDdWJ_swOs</a><br>
+              <a href="https://www.imdb.com/title/tt0068767/?ref_=nv_sr_srsg_4_tt_5_nm_3_q_fist%2520"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/a/a5.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Ant - man & the Wasp</div>
+            <div class="movie-description">A young man seeks vengence for the death of his teacher.Chen Zhen leaves his homeland of China and relocates to stay with family in Thailand. Chen, who swore to his mother that he would avoid violence in his new life and even wears a necklace to remind himself of this oath, is tested when he confronts trouble at his job. When he finds out the factory he works at is a cover for a drug ring, and his family members are murdered by members of the gang, he can avoid fighting no more and decides to confront his corrupt boss.<br><br>
+              <b> DIRECTOR</b>:    Wei Lo<br>
+              <b>WRITER</b>:  Wei Lo <br>  
+              <b>STARS</b>:  Bruce lee , nora miao ,james tian <br>
+              <b>YEAR</b>:  1972<br>
+              <b>VIDEO </b>:  <a href="https://www.youtube.com/watch?v=LZDdWJ_swOs">https://www.youtube.com/watch?v=LZDdWJ_swOs</a><br>
+              <a href="https://www.imdb.com/title/tt0068767/?ref_=nv_sr_srsg_4_tt_5_nm_3_q_fist%2520"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/a/a6.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Mission Impossible</div>
+            <div class="movie-description">A young man seeks vengence for the death of his teacher.Chen Zhen leaves his homeland of China and relocates to stay with family in Thailand. Chen, who swore to his mother that he would avoid violence in his new life and even wears a necklace to remind himself of this oath, is tested when he confronts trouble at his job. When he finds out the factory he works at is a cover for a drug ring, and his family members are murdered by members of the gang, he can avoid fighting no more and decides to confront his corrupt boss.<br><br>
+              <b> DIRECTOR</b>:    Wei Lo<br>
+              <b>WRITER</b>:  Wei Lo <br>  
+              <b>STARS</b>:  Bruce lee , nora miao ,james tian <br>
+              <b>YEAR</b>:  1972<br>
+              <b>VIDEO </b>:  <a href="https://www.youtube.com/watch?v=LZDdWJ_swOs">https://www.youtube.com/watch?v=LZDdWJ_swOs</a><br>
+              <a href="https://www.imdb.com/title/tt0068767/?ref_=nv_sr_srsg_4_tt_5_nm_3_q_fist%2520"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/a/a7.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Avengers : Endgame</div>
+            <div class="movie-description">A young man seeks vengence for the death of his teacher.Chen Zhen leaves his homeland of China and relocates to stay with family in Thailand. Chen, who swore to his mother that he would avoid violence in his new life and even wears a necklace to remind himself of this oath, is tested when he confronts trouble at his job. When he finds out the factory he works at is a cover for a drug ring, and his family members are murdered by members of the gang, he can avoid fighting no more and decides to confront his corrupt boss.<br><br>
+              <b> DIRECTOR</b>:    Wei Lo<br>
+              <b>WRITER</b>:  Wei Lo <br>  
+              <b>STARS</b>:  Bruce lee , nora miao ,james tian <br>
+              <b>YEAR</b>:  1972<br>
+              <b>VIDEO </b>:  <a href="https://www.youtube.com/watch?v=LZDdWJ_swOs">https://www.youtube.com/watch?v=LZDdWJ_swOs</a><br>
+              <a href="https://www.imdb.com/title/tt0068767/?ref_=nv_sr_srsg_4_tt_5_nm_3_q_fist%2520"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/a/a8.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Increadible Hulk</div>
+            <div class="movie-description">A young man seeks vengence for the death of his teacher.Chen Zhen leaves his homeland of China and relocates to stay with family in Thailand. Chen, who swore to his mother that he would avoid violence in his new life and even wears a necklace to remind himself of this oath, is tested when he confronts trouble at his job. When he finds out the factory he works at is a cover for a drug ring, and his family members are murdered by members of the gang, he can avoid fighting no more and decides to confront his corrupt boss.<br><br>
+              <b> DIRECTOR</b>:    Wei Lo<br>
+              <b>WRITER</b>:  Wei Lo <br>  
+              <b>STARS</b>:  Bruce lee , nora miao ,james tian <br>
+              <b>YEAR</b>:  1972<br>
+              <b>VIDEO </b>:  <a href="https://www.youtube.com/watch?v=LZDdWJ_swOs">https://www.youtube.com/watch?v=LZDdWJ_swOs</a><br>
+              <a href="https://www.imdb.com/title/tt0068767/?ref_=nv_sr_srsg_4_tt_5_nm_3_q_fist%2520"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/a/a9.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Thor : The Dark World</div>
+            <div class="movie-description">A young man seeks vengence for the death of his teacher.Chen Zhen leaves his homeland of China and relocates to stay with family in Thailand. Chen, who swore to his mother that he would avoid violence in his new life and even wears a necklace to remind himself of this oath, is tested when he confronts trouble at his job. When he finds out the factory he works at is a cover for a drug ring, and his family members are murdered by members of the gang, he can avoid fighting no more and decides to confront his corrupt boss.<br><br>
+              <b> DIRECTOR</b>:    Wei Lo<br>
+              <b>WRITER</b>:  Wei Lo <br>  
+              <b>STARS</b>:  Bruce lee , nora miao ,james tian <br>
+              <b>YEAR</b>:  1972<br>
+              <b>VIDEO </b>:  <a href="https://www.youtube.com/watch?v=LZDdWJ_swOs">https://www.youtube.com/watch?v=LZDdWJ_swOs</a><br>
+              <a href="https://www.imdb.com/title/tt0068767/?ref_=nv_sr_srsg_4_tt_5_nm_3_q_fist%2520"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/a/a10.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Spiderman: no way home</div>
+            <div class="movie-description">A young man seeks vengence for the death of his teacher.Chen Zhen leaves his homeland of China and relocates to stay with family in Thailand. Chen, who swore to his mother that he would avoid violence in his new life and even wears a necklace to remind himself of this oath, is tested when he confronts trouble at his job. When he finds out the factory he works at is a cover for a drug ring, and his family members are murdered by members of the gang, he can avoid fighting no more and decides to confront his corrupt boss.<br><br>
+              <b> DIRECTOR</b>:    Wei Lo<br>
+              <b>WRITER</b>:  Wei Lo <br>  
+              <b>STARS</b>:  Bruce lee , nora miao ,james tian <br>
+              <b>YEAR</b>:  1972<br>
+              <b>VIDEO </b>:  <a href="https://www.youtube.com/watch?v=LZDdWJ_swOs">https://www.youtube.com/watch?v=LZDdWJ_swOs</a><br>
+              <a href="https://www.imdb.com/title/tt0068767/?ref_=nv_sr_srsg_4_tt_5_nm_3_q_fist%2520"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/a/a11.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Uncharted</div>
+            <div class="movie-description">A young man seeks vengence for the death of his teacher.Chen Zhen leaves his homeland of China and relocates to stay with family in Thailand. Chen, who swore to his mother that he would avoid violence in his new life and even wears a necklace to remind himself of this oath, is tested when he confronts trouble at his job. When he finds out the factory he works at is a cover for a drug ring, and his family members are murdered by members of the gang, he can avoid fighting no more and decides to confront his corrupt boss.<br><br>
+              <b> DIRECTOR</b>:    Wei Lo<br>
+              <b>WRITER</b>:  Wei Lo <br>  
+              <b>STARS</b>:  Bruce lee , nora miao ,james tian <br>
+              <b>YEAR</b>:  1972<br>
+              <b>VIDEO </b>:  <a href="https://www.youtube.com/watch?v=LZDdWJ_swOs">https://www.youtube.com/watch?v=LZDdWJ_swOs</a><br>
+              <a href="https://www.imdb.com/title/tt0068767/?ref_=nv_sr_srsg_4_tt_5_nm_3_q_fist%2520"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/a/a12.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Wolverine</div>
+            <div class="movie-description">A young man seeks vengence for the death of his teacher.Chen Zhen leaves his homeland of China and relocates to stay with family in Thailand. Chen, who swore to his mother that he would avoid violence in his new life and even wears a necklace to remind himself of this oath, is tested when he confronts trouble at his job. When he finds out the factory he works at is a cover for a drug ring, and his family members are murdered by members of the gang, he can avoid fighting no more and decides to confront his corrupt boss.<br><br>
+              <b> DIRECTOR</b>:    Wei Lo<br>
+              <b>WRITER</b>:  Wei Lo <br>  
+              <b>STARS</b>:  Bruce lee , nora miao ,james tian <br>
+              <b>YEAR</b>:  1972<br>
+              <b>VIDEO </b>:  <a href="https://www.youtube.com/watch?v=LZDdWJ_swOs">https://www.youtube.com/watch?v=LZDdWJ_swOs</a><br>
+              <a href="https://www.imdb.com/title/tt0068767/?ref_=nv_sr_srsg_4_tt_5_nm_3_q_fist%2520"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="back-button" href="crime_recommendations.html"><button>somethng new</button></a>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // JavaScript code goes here
+    window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+  </script>
+
+</body>
+
+</html>

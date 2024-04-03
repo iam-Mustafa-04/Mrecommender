@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRecommenderz</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Navbar  -->
+    <header>
+        <a href="#home" class="logo">
+            <i class='bx bxs-movie'></i>MRecommenderz
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!-- menu  -->
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#coming">Coming</a></li>
+            <li><a href="#newsletter">Notifications</a></li>
+        </ul>
+        <a href="account.html" target="_blank" class="btn">MY PROFILE </a>
+            <img src="accountimage.png" alt="Your Image Alt Text" width="50" height="50" style="margin-left:-370px;"style="border-radius: 50%" >
+        </a>
+        
+    </header>
+
+    <!-- Home  -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="./img/home1.jpg" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Guardians of the Galaxy <br>Volume 2</h1>
+                    <a href="https://in.bookmyshow.com/" class="btn">Book Now</a>
+                    <a href="https://www.imdb.com/title/tt3896198/?ref_=nv_sr_srsg_7_tt_8_nm_0_q_gua" class="play">
+                        <i class='bx bx-play' ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="./img/home2.png" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Thor: <br>Love and Thunder</h1>
+                    <a href="https://in.bookmyshow.com/" class="btn">Book Now</a>
+                    <a href="https://www.imdb.com/title/tt10648342/?ref_=nv_sr_srsg_3_tt_5_nm_3_q_thor" class="play">
+                        <i class='bx bx-play' ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="./img/home3.jpg" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Spider-Man <br>No Way Home</h1>
+                    <a href="https://in.bookmyshow.com/" class="btn">Book Now</a>
+                    <a href="https://www.imdb.com/title/tt10872600/?ref_=nv_sr_srsg_6_tt_8_nm_0_q_spider" class="play">
+                        <i class='bx bx-play' ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="./img/home4.png" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Avengers: <br>End Game</h1>
+                    <a href="https://in.bookmyshow.com/" class="btn">Book Now</a>
+                    <a href="https://www.imdb.com/title/tt4154796/?ref_=nv_sr_srsg_3_tt_6_nm_2_q_aven" class="play">
+                        <i class='bx bx-play' ></i>
+                    </a>
+                </div>
+            </div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
+    </section>
+<br>
+<!-- Recommend Movies Button and Genre Buttons -->
+<div class="recommendation-buttons">
+    <a href="./genre/recommendation.html"><button class="recommend-button">Recommend Movies</button></a>
+</div>
+
+<!-- Movies  -->
+    <div class="movies" id="movies">
+        <h2 class="heading">Latest movies<br></h2>
+        <!-- Movies container  -->
+        <div class="movies-container">
+            <!-- box-1  -->
+            <div class="box">
+                <a href="https://www.imdb.com/title/tt1211837/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_dr%2520st" > <!-- Add this line -->
+                    <div class="box-img">
+                        <img src="./img/m1.jpg" alt="">
+                    </div>
+                </a>
+                <h3>Dr.Strange</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- box-2  -->
+            <div class="box">
+                <a href="https://www.imdb.com/title/tt12844910/?ref_=nv_sr_srsg_6_tt_2_nm_6_q_pathan%27" > <!-- Add this line -->
+                    <div class="box-img">
+                        <img src="./img/m2.jpg" alt="">
+                    </div>
+                </a>
+                <h3>Pathan</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- box-3  -->
+            <div class="box">
+                <a href="https://www.imdb.com/title/tt2975590/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_batman%2520v" > <!-- Add this line -->
+                    <div class="box-img">
+                        <img src="./img/m3.jpg" alt="">
+                    </div>
+                </a>
+                <h3>Batman vs Superman</h3>
+                <span>120 min | Thriller</span>
+            </div>
+            <!-- box-4  -->
+            <div class="box">
+                <a href="https://www.imdb.com/title/tt4425200/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_johnwick%25202" > <!-- Add this line -->
+                    <div class="box-img">
+                        <img src="./img/m4.jpg" alt="">
+                    </div>
+                </a>
+                <h3>John Wick 2</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- box-5  -->
+            <div class="box">
+                <a href="https://www.imdb.com/title/tt1477834/?ref_=nv_sr_srsg_3_tt_8_nm_0_q_aquam" > <!-- Add this line -->
+                    <div class="box-img">
+                        <img src="./img/m5.jpg" alt="">
+                    </div>
+                </a>
+                <h3>Aquaman</h3>
+                <span>120 min | Adventure</span>
+            </div>
+            <!-- box-6  -->
+            <div class="box">
+                <a href="https://www.imdb.com/title/tt1825683/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_black%2520panther" > <!-- Add this line -->
+                    <div class="box-img">
+                        <img src="./img/m6.jpg" alt="">
+                    </div>
+                </a>
+                <h3>Black Panther</h3>
+                <span>120 min | Thriller</span>
+            </div>
+            <!-- box-7  -->
+            <div class="box">
+                <a href="https://www.imdb.com/title/tt1464335/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_uncharted" > <!-- Add this line -->
+                    <div class="box-img">
+                        <img src="./img/m7.jpg" alt="">
+                    </div>
+                </a>
+                <h3>Uncharted</h3>
+                <span>120 min | Adventure</span>
+            </div>
+            <!-- box-8  -->
+            <div class="box">
+                <a href="https://www.imdb.com/title/tt6277462/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_brahmas" > <!-- Add this line -->
+                    <div class="box-img">
+                        <img src="./img/m8.jpg" alt="">
+                    </div>
+                </a>
+                <h3>Brahmastra</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- box-9  -->
+            <div class="box">
+                <a href="https://www.imdb.com/title/tt1571234/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_mortak" > <!-- Add this line -->
+                    <div class="box-img">
+                        <img src="./img/m9.jpg" alt="">
+                    </div>
+                </a>
+                <h3>Mortal-Engines</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- box-10  -->
+            <div class="box">
+                <a href="https://www.imdb.com/title/tt3717252/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_underworld%2520blood%2520" > <!-- Add this line -->
+                    <div class="box-img">
+                        <img src="./img/m10.jpg" alt="">
+                    </div>
+                </a>
+                <h3>UnderWorld Blood Wars</h3>
+                <span>120 min | Action</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- coming  -->
+    <section class="coming" id="coming">
+        <h2 class="heading">Coming Soon</h2>
+        <!-- coming contanier  -->
+        <div class="coming-container swiper">
+            <div class="swiper-wrapper">
+                <!-- box-1  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c1.jpg" alt="">
+                    </div>
+                    <h3>Ant-Man and the Wasp:Quantumania</h3>
+                </div>
+                <!-- box-2  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c2.jpg" alt="">
+                    </div>
+                    <h3>The Flash</h3>
+                </div>
+                <!-- box-3  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c3.jpg" alt="">
+                    </div>
+                    <h3>Guardians of the Galaxy Vol.3</h3>
+                </div>
+                <!-- box-4  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c4.jpg" alt="">
+                    </div>
+                    <h3>Shazam! Fury of the Gods</h3>
+                </div>
+                <!-- box-5  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c5.jpg" alt="">
+                    </div>
+                    <h3>Aquaman and the Lost Kingdom</h3>
+                </div>
+                <!-- box-6  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c6.jpg" alt="">
+                    </div>
+                    <h3>John Wick:Chapter 4</h3>
+                </div>
+                <!-- box-7 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c7.jpg" alt="">
+                    </div>
+                    <h3>Transformer rise of the beasts</h3>
+                </div>
+                <!-- box-8  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c8.jpg" alt="">
+                    </div>
+                    <h3>Mission: Impossible 7</h3>
+                </div>
+                <!-- box-9  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c9.png" alt="">
+                    </div>
+                    <h3>Deadpool 3</h3>
+                </div>
+                <!-- box-10  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/c10.jpg" alt="">
+                    </div>
+                    <h3>Dune: Part two</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter /\ -->
+    <section class="newsletter" id="newsletter">
+        <h2>Subscribe To Get <br>Latest Notifications</h2>
+        <form action="">
+            <input type="email" class="email" placeholder="Enter Email" required>
+            <input type="submit" value="Subscribe" class="btn">
+        </form>
+    </section>
+
+    <!-- footer  -->
+    <section class="footer">
+        <a href="" class="logo">
+            <i class="bx bxs-movie"></i>MRecommenderz
+        </a>
+        <div class="social">
+            <a href="https://www.facebook.com/dragneel.gaming.12?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://twitter.com/Mohamme64195751    " target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/_mr.dragneelyt/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </section>
+
+    <!-- Copyright  -->
+    <div class="copyright">
+        <p>&#169; MRecommenderz All Right Reserved</p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

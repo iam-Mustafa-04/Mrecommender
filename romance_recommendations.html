@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category: Romance</title> 
+  <style>
+    /* CSS Styles */
+    body {
+      background: linear-gradient(135deg, #e60707, #5c0234); /* Reddish dark grey gradient */
+      color: #ffffff;
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .category-heading {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            background-color: rgba(202, 7, 7, 0.589); /* Semi-transparent white */
+            border-radius: 50px;
+            padding: 10px 10px; /* Add padding */
+            border: 2px solid #ffffff; /* Add border */
+        }
+
+    .movie-box {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(248, 241, 241, 0.3); /* White shadow */
+      transition: box-shadow 0.2s ease-in-out; /* Smooth transition */
+      border: 0.15px solid#ffffff;    }
+
+    .movie-box:hover {
+      box-shadow: 0 0 20px rgb(255, 255, 255); /* White shadow on hover */
+    }
+
+    .movie-image {
+      width: 150px;
+      height: auto;
+      margin-right: 20px;
+      border-radius: 5%;
+      border: 2px solid#ffffff;
+    }
+
+    .movie-details {
+      flex: 1;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .movie-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+
+    .movie-description {
+      font-size: 16px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .back-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+ /* Style the "Something New" button */
+ .back-button button {
+    padding: 20%;
+      background-color: #f709eb; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    /* Change the button color on hover */
+    .back-button button:hover {
+        box-shadow: 0 0 20px rgb(255, 255, 255); /* White shadow on hover */
+    }
+
+    .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3ededea;
+  transition: opacity 15s, visibility 3s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #0c0a0a;
+  border-top-color: #f708d7;
+  border-radius: 50%;
+  animation: loading 0.5s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="loader"></div>
+  <!-- Category heading -->
+  <div class="category-heading">Category: Romance</div>
+
+  <!-- Movie box -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/r/r1.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Beauty And The Beast</div>
+            <div class="movie-description">Derived from the classic fairy tale, this fantasy-musical traces the heart-warming story of Belle (Emma Watson) as she transforms the Beast (Dan Stevens) into a handsome prince through love. Watch it for: Stunning visuals of a Rococo-era France that make for a perfect setting for the romance to unfurl. <br><br>
+             <b> DIRECTOR</b>:  Bill Condon<br>
+             <b>WRITER</b>:   Stephen Chbosk,yEvan Spiliotopoulos,Linda Woolverton<br>  
+             <b>STARS</b>:  Emma Watson,Dan Stevens,Luke Evans <br>
+             <b>YEAR</b>:  2017<br>
+             <a href="https://www.imdb.com/title/tt2771200/?ref_=fn_al_tt_1"><b>MORE DETAILS</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/r/r2.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">The Proposal</div>
+            <div class="movie-description">What happens when the Canadian boss lady from hell (Sandra Bullock) convinces her employee with a heart of gold (Ryan Reynolds) to marry her in order to avoid deportation from the US? An unlikely romance blossoms.<br><br>
+              <b> DIRECTOR</b>:Anne Fletcher<br>
+              <b>WRITER</b>:   Peter Chiarelli <br>  
+              <b>STARS</b>:  Sandra Bullock, Ryan Reynolds, Mary Steenburgen <br>
+              <b>YEAR</b>:  2009<br>
+              <a href="https://www.imdb.com/title/tt1041829/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_The%2520Proposal%2520(2009)"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/r/r3.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">The Holiday</div>
+            <div class="movie-description">Two women (Kate Winslet and Cameron Diaz) living on the opposite ends of the Atlantic Ocean, jilted in love and desiring escape, arrange for a two-week-long home exchange, where they eventually find love. 
+              <br><br>
+              <b> DIRECTOR</b>:Nancy Meyers<br>
+              <b>WRITER</b>:Nancy Meyers <br>  
+              <b>STARS</b>:Kate Winslet,Cameron Diaz,Jude Law<br>
+              <b>YEAR</b>:  2006<br>
+              <a href="https://www.imdb.com/title/tt0457939/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_The%2520Holiday%2520(2006)"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/r/r4.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">jab we Met</div>
+            <div class="movie-description">Firebrand Geet (Kareena Kapoor) meets a lovelorn business man Aditya (Shahid Kapoor) aboard a train to Bhatinda. While Aditya overcomes his depression through Geet's zesty life lessons, Geet plans on eloping with her lover. But fate has other plans for the two. Watch it for: Kareena's hilarious portrayal of an OTT Punjabi girl and her harem pants that made it to all college-girls' wardrobes<br><br>
+              <b> DIRECTOR</b>:                 Imtiaz Ali<br>
+              <b>WRITER</b>:               Imtiaz Ali <br>  
+              <b>STARS</b>:  Shahid Kapoor,Kareena Kapoor,Tarun Arora <br>
+              <b>YEAR</b>:  2007<br>
+              <a href="https://www.imdb.com/title/tt1093370/?ref_=nv_sr_srsg_0_tt_5_nm_3_q_jab"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/r/r5.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Kuch Kuch Hota Hai (1998)</div>
+            <div class="movie-description">Anjali (Kajol), a tomboy, is in love with college's most popular boy (also coincidentally her best friend), Rahul (Shah Rukh Khan). When Rahul decides to be with Tina (Rani Mukherjee), a heartbroken Anjali leaves college and moves away, only to be reunited with Rahul years later on his late wife's wish.<br><br>
+              <b> DIRECTOR</b>:                 Karan Johar<br>
+              <b>WRITER</b>:               Karan Johar <br>  
+              <b>STARS</b>:          Shah Rukh Khan,KajolR,ani Mukerji <br>
+              <b>YEAR</b>:  1998<br>
+              <a href="https://www.imdb.com/title/tt0172684/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Kuch%2520Kuch%2520Hota%2520Hai%2520(1998)"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/r/r6.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Yeh Jawaani Hai Deewani (2013)</div>
+            <div class="movie-description">Dorky, studious Naina (Deepika Padukone) develops a crush on carefree, ambitious Kabir (Ranbir Kapoor) on a college trip to Manali, only to lose him to his dream of travelling the world. Years later, globetrotting Kabir returns to India for a friend's wedding and sparks fly between him and the now beautiful and confident Nain.<br><br>
+              <b> DIRECTOR</b>:               Ayan Mukerji<br>
+              <b>WRITER</b>: Hussain Dalal,Ayan Mukerji <br>  
+              <b>STARS</b>: Ranbir Kapoor,Deepika Padukone,Aditya Roy Kapoor <br>
+              <b>YEAR</b>:  2013<br>
+              <a href="https://www.imdb.com/title/tt2178470/?ref_=nv_sr_srsg_0_tt_1_nm_0_q_Yeh%2520Jawaani%2520Hai%2520Deewani%2520(2013)"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/r/r7.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Mohabbatein</div>
+            <div class="movie-description">Narayan Shankar (Amitabh Bachchan), the strict headmaster of Gurukul, places discipline over everything else, especially romance. When Raj Aryan (Shah Rukh Khan) joins the school as a music teacher and encourages students to love freely, all hell breaks loose. Watch it for: The bittersweet romance between Shah Rukh Khan and Aishwarya Rai Bachchan, and the youthful energy of the film. <br><br>
+              <b> DIRECTOR</b>:    Aditya Chopra<br>
+              <b>WRITER</b>:  Aditya Chopra <br>  
+              <b>STARS</b>:              Amitabh Bachchan,Shah Rukh Khan,Uday Chopra <br>
+              <b>YEAR</b>:  2000  <br>
+              <a href="https://www.imdb.com/title/tt0213890/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Mohabbatein%2520(2000)"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/r/r8.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Dilwale Dulhania Le Jayenge</div>
+            <div class="movie-description">Raj (Shah Rukh Khan) and Simran (Kajol) fall for each other on a trip to Europe. However, Simran's conservative father wishes for Simran to marry his best friend's son and duly whisks her off to Punjab on finding out about her affair with Raj. Raj gate-crashes the wedding posing as the groom's friend and eventually wins the bride over. Watch it for: The classic Yash Raj brand of romance, with Raj and Simran in the Swiss Alps; and Amrish Puri's memorable "Jaa Simran Jaa" sequence in the climax<br><br>
+              <b> DIRECTOR</b>:                Aditya Chopra<br>
+              <b>WRITER</b>:  Aditya Chopra  ,Javed Siddiqui<br>  
+              <b>STARS</b>:       Shah Rukh Khan,Kajol,Amrish Puri <br>
+              <b>YEAR</b>:  1995<br>
+              <a href="https://www.imdb.com/title/tt0112870/?ref_=nv_sr_srsg_0_tt_2_nm_0_q_Dilwale%2520Dulhania%2520Le%2520Jayenge%2520(1995)"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/r/r9.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Bajirao Mastani</div>
+            <div class="movie-description">This period romantic-drama traces the epic love saga of Maratha chieftain Bajirao and princess Mastani, who leaves home and arrives in her lover's land, only to face rejection by his family. While Mastani fights for her safety, pride and love, Bajirao strives hard to strike a balance between his love for Mastani and his respect for his first wife, Kashi Bai. Eventually, politics from scheming family members drives the two apart, resulting in a tragic end. Watch it for: Priyanka Chopra's touching portrayal of the devoted and lovelorn Kashi Bai, and the chilling climax where the star-cross lovers breath their last. <br><br>
+              <b> DIRECTOR</b>:    Sanjay Leela Bhansali<br>
+              <b>WRITER</b>: Nagnath S. Inamdar,Sanjay Leela Bhansali,Mallika Dutt <br>  
+              <b>STARS</b>: Ranveer Singh,Deepika Padukone,Priyanka Chopra Jonas <br>
+              <b>YEAR</b>:  2015<br>
+              <a href="https://www.imdb.com/title/tt3735246/?ref_=nv_sr_srsg_0_tt_3_nm_1_q_Bajirao%2520Mastani%2520(2015)"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/r/r10.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Humpty Sharma ki Dulhania</div>
+            <div class="movie-description">A small-town girl heads to Delhi to find a designer outfit for the wedding her orthodox father has arranged for her but ends up finding love instead. Watch all you want. Alia Bhatt (“Raazi”) and Varun Dhawan (“Judwaa 2”) lend their crackling chemistry to this homage to a '90s Bollywood rom-com.<br><br>
+              <b> DIRECTOR</b>:               Shashank Khaitan<br>
+              <b>WRITER</b>:             Shashank Khaitan <br>  
+              <b>STARS</b>: Varun Dhawan,Alia Bhatt,Ashutosh Rana<br>
+              <b>YEAR</b>:  2014<br>
+              <a href="https://www.imdb.com/title/tt3678938/?ref_=nv_sr_srsg_0_tt_1_nm_0_q_Humpty%2520Sharma%2520ki%2520Dulhania%2520(2014)"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/r/r11.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">Barfi! </div>
+            <div class="movie-description">Set in Darjeeling and Kolkata of the 1970s, the film is about Barfi (Kapoor), a deaf-mute young man based in Darjeeling, and his relationships with two lovely girls, the beautiful Shruti (D'Cruz), and the autistic Jhilmil (Chopra). Barfi! Made on a total budget of ₹35 crore, Barf<br><br>
+              <b> DIRECTOR</b>:                Anurag Basu<br>
+              <b>WRITER</b>:         Anurag BasuTani BasuSanjeev Dutta <br>  
+              <b>STARS</b>:   Ranbir Kapoor ,Priyanka Chopra Jonas ,  Ileana D'Cruz<br>
+              <b>YEAR</b>:  2012<br>
+              <a href="https://www.imdb.com/title/tt2082197/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Barfi!"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="movie-box">
+          <img class="movie-image" src="/r/r12.jpg" alt="Blank Image">
+          <div class="movie-details">
+            <div class="movie-title">kabhi khushi kabhi gham </div>
+            <div class="movie-description">After marrying a poor woman, rich Rahul is disowned by his father and moves to London to build a new life. Years later, his now-grown younger brother Rohan embarks on a mission to bring Rahul back home and reunite the family         <br><br>
+              <b> DIRECTOR</b>:   Karan Johar<br>
+              <b>WRITER</b>:              Karan Johar <br>  
+              <b>STARS</b>:  Shah Rukh Khan, Kajol , Amitabh Bachchan <br>
+              <b>YEAR</b>:  2001<br>
+              <a href="https://www.imdb.com/title/tt0248126/?ref_=nv_sr_srsg_0_tt_5_nm_3_q_kabhi%2520khushi%2520kabhi%2520gham"><b>MORE DETAILS</b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="back-button" href="science-fiction_recommendations.html"><button>somethng new</button></a>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // JavaScript code goes here
+    window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+  </script>
+
+</body>
+
+</html>
