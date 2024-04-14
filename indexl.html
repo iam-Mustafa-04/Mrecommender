@@ -303,6 +303,52 @@
     <div class="copyright">
         <p>&#169; MRecommenderz All Right Reserved</p>
     </div>
+ <style>
+        .wrapper {
+          height: 100vh;
+          /*This part is important for centering*/
+          display: grid;
+          place-items: center;
+        }
+        
+        .typing-demo {
+          width: 33ch;
+          animation: typing 10s steps(250), blink .5s step-end infinite alternate;
+          white-space: nowrap;
+          overflow: hidden;
+          border-right: 3px solid;
+          font-family: monospace;
+          font-size: 2em;
+          background-color: rgba(255, 255, 255, 0.5); /* Translucent white background */
+      padding: 10px; /* Add padding for spacing */
+      border-radius:20px
+        }
+        
+        @keyframes typing {
+          from {
+            width: 0
+          }to{
+            width:33ch;
+          }
+        }
+            
+        @keyframes blink {
+          50% {
+            border-color: transparent
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div class="wrapper">
+        <div class="typing-demo">
+          This Project was developed by <br> 
+          21061-cs-004 ~ Mohammed Mustafa <br>
+          21061-cs-011 ~ Syed Ashfaq Ahad <br>
+          21061-cs-002 ~ Shaik Raheem <br>
+          21061-cs-008 ~ Syed Sami uddin
+        </div>
+      </div>
 
 
 
